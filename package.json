@@ -14,7 +14,8 @@
     "start-frontend": "yarn workspace @sample/app start",
     "start": "node app.js",
     "typecheck": "tsc --noEmit",
-    "prettify": "npx prettier \"packages/**/*.{js,ts,tsx}\" --write"
+    "prettify": "npx prettier \"packages/**/*.{js,ts,tsx}\" --write",
+    "start:eb": "yarn install && yarn start"
   },
   "devDependencies": {
     "@ts-tools/node": "^1.1.3",
