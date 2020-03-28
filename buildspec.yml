@@ -12,7 +12,9 @@ phases:
   post_build:
     commands:
     - echo Build completed on `date`
-    - ls ./node_modules
+    - ls ./node_mod ules
 artifacts:
   files:
-  - '**/*'
+    - app.js
+    - package.json
+    - node_modules/@sample/**/*
