@@ -6,3 +6,4 @@ files:
     content: |
       #!/usr/bin/env bash
       chown -R nodejs:nodejs /tmp/.npm
+      chown -R nodejs:nodejs /tmp/.config/yarn
