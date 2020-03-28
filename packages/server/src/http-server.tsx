@@ -4,6 +4,7 @@ import compression from 'compression';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { App } from '@sample/app';
+import  errorHandler  from 'errorhandler';
 
 const appRootDirectory = dirname(require.resolve('@sample/app/package.json'));
 const appBundleDirectory = join(appRootDirectory, 'umd');
@@ -14,6 +15,19 @@ export function createHttpServer() {
     app.use(compression());
     app.use(express.static(appBundleDirectory));
     app.get('/server', ssrHandler);
+
+    /**
+     * Error Handler.
+     */
+    if (process.env.NODE_ENV === 'development') {
+        // only use in development
+        app.use(errorHandler());
+    } else {
+        app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+            console.error(err);
+            res.status(500).send('Server Error');
+        });
+    }
 
     return app;
 }
