@@ -18,6 +18,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - cp ./packages/* ./node_modules/@sample/
 artifacts:
   files:
     - '**/*'
