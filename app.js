@@ -1,1 +1,1 @@
-require("./packages/server/cjs/server-main")
+require("@sample/server/cjs/server-main")
