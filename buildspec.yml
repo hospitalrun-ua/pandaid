@@ -20,9 +20,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - app.js
-    - package.json
-    - node_modules/**/*
+    - '**/*'
 
 # At this step, we instruct codebuild to cache all items that in the NPM Cache
 # that we configured earlier
