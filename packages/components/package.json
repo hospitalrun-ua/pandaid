@@ -1,0 +1,31 @@
+{
+  "name": "@sample/components",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./cjs ./esm",
+    "prebuild": "yarn clean",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir cjs",
+    "build:esm": "tsc -p tsconfig.build.json --module esnext --outDir esm",
+    "test": "mocha \"test/**/*.spec.ts?(x)\"",
+    "prepack": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "license": "MIT",
+  "repository": "git@github.com:wixplosives/sample.git",
+  "sideEffects": false,
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}

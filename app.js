@@ -1,0 +1,1 @@
+require("./packages/server/cjs/server-main")

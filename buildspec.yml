@@ -6,9 +6,10 @@ phases:
         nodejs: 10
     commands:
     - echo Installing node packs...
-    - npm install
+    - yarn install
 post_build:
   commands:
+  - yarn build
   - echo Build completed on `date`
 artifacts:
   files:

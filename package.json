@@ -1,0 +1,52 @@
+{
+  "name": "sample",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "lerna run clean --stream --parallel",
+    "build": "lerna run build --stream --parallel",
+    "lint": "eslint . --ext .js,.ts,.tsx -f codeframe",
+    "pretest": "yarn typecheck && yarn lint",
+    "test": "yarn test:unit",
+    "test:unit": "mocha \"packages/**/test/**/*.spec.ts?(x)\"",
+    "start": "yarn workspace @sample/app start",
+    "typecheck": "tsc --noEmit",
+    "prettify": "npx prettier \"packages/**/*.{js,ts,tsx}\" --write"
+  },
+  "devDependencies": {
+    "@ts-tools/node": "^1.1.3",
+    "@ts-tools/webpack-loader": "^1.1.4",
+    "@types/chai": "^4.2.11",
+    "@types/compression": "^1.7.0",
+    "@types/express": "^4.17.3",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "12",
+    "@types/react": "^16.9.26",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "chai": "^4.2.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-no-only-tests": "^2.4.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "html-webpack-plugin": "^4.0.2",
+    "lerna": "^3.20.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "mocha": "^7.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "~3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "license": "MIT",
+  "private": true
+}

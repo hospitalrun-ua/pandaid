@@ -1,0 +1,37 @@
+{
+  "name": "@sample/app",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "types": "cjs/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./cjs ./umd",
+    "prebuild": "yarn clean",
+    "build": "yarn build:cjs && yarn build:umd",
+    "build:cjs": "tsc -p tsconfig.build.json",
+    "build:umd": "yarn bundle:prod",
+    "bundle:prod": "webpack --mode production",
+    "bundle:dev": "webpack --mode development --devtool source-map",
+    "test": "mocha \"test/**/*.spec.ts?(x)\"",
+    "start": "webpack-dev-server --mode development --progress --open",
+    "prepack": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "dependencies": {
+    "@sample/components": "^1.0.0",
+    "sanitize.css": "^11.0.0"
+  },
+  "files": [
+    "cjs",
+    "umd",
+    "src"
+  ],
+  "license": "MIT",
+  "repository": "git@github.com:wixplosives/sample.git",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}
