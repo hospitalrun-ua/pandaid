@@ -1,20 +1,33 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - yarn config set cache-folder /root/.yarn
+      - yarn install --frozen-lockfile  --prefer-offline
   pre_build:
     commands:
-    - echo Installing source NPM dependencies...
-    - yarn install
+      # Clean entire monorepo and install dependent packages
+      - ./node_modules/.bin/lerna bootstrap --ci --ignore-scripts --concurrency 4
   build:
     commands:
-    - echo Build started on `date`
-    - yarn build
+      # Build everything
+      - echo Build started on `date`
+      - ./node_modules/.bin/lerna run build --concurrency 4
   post_build:
     commands:
-    - echo Build completed on `date`
-    - ls ./node_mod ules
+      - echo Build completed on `date`
+      - ls ./node_modules
 artifacts:
   files:
     - app.js
     - package.json
     - node_modules/@sample/**/*
+
+# At this step, we instruct codebuild to cache all items that in the NPM Cache
+# that we configured earlier
+cache:
+  paths:
+    - node_modules
+    - /root/.yarn/**/*
