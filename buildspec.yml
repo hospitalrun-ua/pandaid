@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        nodejs: 10
+    commands:
+    - echo Installing node packs...
+    - npm install
+post_build:
+  commands:
+  - echo Build completed on `date`
+artifacts:
+  files:
+  - '**/*'
