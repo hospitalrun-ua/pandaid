@@ -18,10 +18,10 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - rm -rf ./node_modules/@sample/
-      - mkdir -p ./node_modules/@sample/
-      - cp -r ./packages/* ./node_modules/@sample/
-      - ls ./node_modules/
+      # - rm -rf ./node_modules/@sample/
+      # - mkdir -p ./node_modules/@sample/
+      # - cp -r ./packages/* ./node_modules/@sample/
+      # - ls ./node_modules/
 artifacts:
   files:
     - '**/*'
