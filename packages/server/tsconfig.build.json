@@ -1,11 +1,9 @@
 {
-    "extends": "../../tsconfig.json",
+    "extends": "@loopback/build/config/tsconfig.common.json",
     "compilerOptions": {
         "module": "commonjs",
-        "outDir": "cjs",
-        "paths": {
-            "@sample/*": ["node_modules/@sample/*/src"]
-        }
+        "outDir": "dist",
+        "rootDir": "src"
     },
     "include": ["src"]
 }

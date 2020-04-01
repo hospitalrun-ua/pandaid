@@ -1,36 +1,58 @@
 {
-  "name": "@sample/server",
+  "name": "pandaid-backend",
   "version": "1.0.0",
-  "main": "cjs/index.js",
-  "types": "cjs/index.d.ts",
-  "scripts": {
-    "clean": "rimraf ./cjs",
-    "prebuild": "yarn clean",
-    "build": "tsc -p tsconfig.build.json",
-    "test": "mocha \"test/**/*.spec.ts?(x)\"",
-    "prestart": "yarn workspace @sample/app build:umd",
-    "start": "node -r @ts-tools/node/r -r tsconfig-paths/register ./src/server-main.ts",
-    "prepack": "yarn build"
-  },
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
-  "dependencies": {
-    "@sample/app": "^1.0.0",
-    "@types/errorhandler": "^1.5.0",
-    "compression": "^1.7.4",
-    "errorhandler": "^1.5.1",
-    "express": "^4.17.1"
-  },
-  "files": [
-    "cjs",
-    "src"
+  "description": "pandaid-backend",
+  "keywords": [
+    "loopback-application",
+    "loopback"
   ],
-  "license": "MIT",
-  "repository": "git@github.com:wixplosives/sample.git",
-  "private": true,
-  "publishConfig": {
-    "access": "public"
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "clean": "lb-clean dist *.tsbuildinfo",
+    "pretest": "npm run clean && npm run build",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js",
+    "docker:build": "docker build -t pandaid-backend .",
+    "docker:run": "docker run -p 3000:3000 -d pandaid-backend",
+    "migrate": "node ./dist/migrate",
+    "prestart": "npm run build",
+    "start": "node -r source-map-support/register .",
+    "prepublishOnly": "npm run test"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^2.0.2",
+    "@loopback/context": "^3.2.0",
+    "@loopback/core": "^2.2.0",
+    "@loopback/openapi-v3": "^3.1.1",
+    "@loopback/repository": "^2.0.2",
+    "@loopback/rest": "^3.1.0",
+    "@loopback/rest-explorer": "^2.0.2",
+    "@loopback/service-proxy": "^2.0.2",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^5.0.0",
+    "source-map-support": "^0.5.16",
+    "@loopback/testlab": "^2.0.2",
+    "@types/node": "^10.17.17",
+    "typescript": "~3.8.3"
   }
 }
