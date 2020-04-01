@@ -9,6 +9,24 @@ Install the following extensions:
 
  - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
  - [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+ 
+## Install LoopBack CLI
+ 
+Install LoopBack CLI npm package:
+ 
+ 
+```
+npm install -g @loopback/cli
+```
+
+This CLI can be used to generate controllers, models, and repositories:
+
+```
+lb4 model # Create a model
+lb4 datasource # Adds a datasource
+lb4 repository # Adds a repository
+lb4 controller # Adds a controller
+```
 
 ## Development workflow
 
