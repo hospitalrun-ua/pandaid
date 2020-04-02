@@ -1,8 +1,11 @@
-# sample-monorepo
+# PandAid
 [![Build Status](https://github.com/wixplosives/sample-monorepo/workflows/tests/badge.svg)](https://github.com/wixplosives/sample-monorepo/actions)
 
-Sample monorepo setup with yarn workspaces, typescript, and lerna.
+Онлайн платформа - інструмент, який дає змогу координувати дії між благодійними, волонтерських організаціями та організаціями які потребують допомоги. [Детальний Опис проекту](https://github.com/hospitalrun-ua/backend/wiki/%D0%97%D0%B0%D0%B3%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BE%D0%BF%D0%B8%D1%81-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83)
 
+
+Below is description from original mono-repo boilerplate
+---
 ## Setup explained
 
 ### Tooling
