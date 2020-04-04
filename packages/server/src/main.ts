@@ -7,6 +7,7 @@ const logger = createLogger('nestApp')
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('api');
 
   const options = new DocumentBuilder()
       .setTitle('PandAid')
