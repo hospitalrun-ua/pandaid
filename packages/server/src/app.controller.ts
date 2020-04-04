@@ -13,7 +13,7 @@ export class AppController {
 
   @Get()
   @ApiResponse({ status: 200, type: HelloWorldResponse })
-  getHello(): HelloWorldResponse {
+  public getHello(): HelloWorldResponse {
     return {
       msg: this.appService.getHello()
     };
