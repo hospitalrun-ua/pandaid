@@ -22,7 +22,7 @@ Frontend | **React** | `Decided` | Popular, easy to work with
 Repository | **Monorepo** | `Decided` | Front-end and back-end are together
 API | **REST** | `Decided` | Front-end and back-end are together
 Hosting | **AWS** | `Decided` | We have credit
-Backend Framework | **Nest.JS** | `Considering` | ?(Nest.JS, Loopback) Open for suggestions
+Backend Framework | **Nest.JS** | `Decided` | Considedred Nest.JS, Loopback, pure Express
 Backend Database | **???** | `Postponed` | Most likely PostgreSQL, less likely MongoDB
 
 ## Links
