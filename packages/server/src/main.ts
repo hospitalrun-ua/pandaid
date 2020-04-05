@@ -18,6 +18,6 @@ async function bootstrap() {
   SwaggerModule.setup('swagger', app, document);
 
   logger.info('Listening...')
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();
