@@ -3,6 +3,8 @@
 
 Онлайн платформа - інструмент, який дає змогу координувати дії між благодійними, волонтерських організаціями та організаціями які потребують допомоги. [Детальний Опис проекту](https://github.com/hospitalrun-ua/pandaid/wiki)
 
+Якщо ви розробник і хочете доєднатись до проекту - заповніть невелику форму https://forms.gle/GddYNNfEierWEJny6
+
 ## Repository structure
 Repository is bundled as Monorepo using Lerna
 - Frontend [to be set up]
