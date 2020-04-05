@@ -25,3 +25,6 @@ Hosting | **AWS** | `Decided` | We have credit
 Backend Framework | **Nest.JS** | `Considering` | ?(Nest.JS, Loopback) Open for suggestions
 Backend Database | **???** | `Postponed` | Most likely PostgreSQL, less likely MongoDB
 
+## Links
+| [Backend tasks](https://trello.com/b/1HI9XBdG/backend) |
+| --- |
