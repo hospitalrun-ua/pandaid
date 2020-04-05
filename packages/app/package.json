@@ -1,37 +1,35 @@
 {
-  "name": "@sample/app",
-  "version": "1.0.0",
-  "main": "cjs/index.js",
-  "types": "cjs/index.d.ts",
-  "scripts": {
-    "clean": "rimraf ./cjs ./umd",
-    "prebuild": "yarn clean",
-    "build": "yarn build:cjs && yarn build:umd",
-    "build:cjs": "tsc -p tsconfig.build.json",
-    "build:umd": "yarn bundle:prod",
-    "bundle:prod": "webpack --mode production",
-    "bundle:dev": "webpack --mode development --devtool source-map",
-    "test": "mocha \"test/**/*.spec.ts?(x)\"",
-    "start": "webpack-dev-server --mode development --progress --open",
-    "prepack": "yarn build"
-  },
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
-  "dependencies": {
-    "@sample/components": "^1.0.0",
-    "sanitize.css": "^11.0.0"
-  },
-  "files": [
-    "cjs",
-    "umd",
-    "src"
-  ],
-  "license": "MIT",
-  "repository": "git@github.com:wixplosives/sample.git",
+  "name": "app",
+  "version": "0.1.0",
   "private": true,
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "@material-ui/core": "^4.9.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
