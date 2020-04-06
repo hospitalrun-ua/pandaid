@@ -13,7 +13,7 @@
     "types": ["jest"],
     "paths": {
       "@shared/*": ["../shared/*"],
-      "class-validator": ["node_modules/class-validator"]
+      "class-validator": ["./node_modules/class-validator"]
     }
   },
   "include": ["./src/**/*.ts", "../shared/**/*.ts"]
