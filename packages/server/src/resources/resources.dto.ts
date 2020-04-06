@@ -1,11 +1,9 @@
-import {ApiProperty} from "@nestjs/swagger";
 
 export class ResourcesResponse {
-    @ApiProperty()
     list: Resource[];
 }
 
-export interface Resource {
+export class Resource {
     id: number;
     name: string;
     quantity: number;
@@ -20,25 +18,27 @@ export enum ResourceStates {
     CREATED = 0
 }
 
-export interface Beneficiary {
+export class Beneficiary {
     name: string;
     address: string;
 }
 
-export interface Contact {
+export class Contact {
     name: string;
     email?: string; // TODO add email type
     phone?: string; // TODO add phone type
     website?: string; // TODO add website type
 }
 
-export interface CreateRequestRequest {
+export class CreateRequestRequest {
     beneficiary: Beneficiary | null;
     contactPerson?: Contact;
-    items: [{
-        name: string;
-        quantity: number;
-        price?: number;
-    }],
-    "deadline": number
+    items: Item[];
+    deadline: number
+}
+
+class Item {
+    name: string;
+    quantity: number;
+    price?: number;
 }

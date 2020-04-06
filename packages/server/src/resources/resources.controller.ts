@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpCode, Post, Query, UseGuards } from '@nestjs/common';
 import { ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
-import { ResourceStates, ResourcesResponse, CreateRequestRequest } from './resources.interface';
+import { ResourceStates, ResourcesResponse, CreateRequestRequest } from './resources.dto';
 import { Roles } from '../auth/roles.decorator';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { RolesGuard } from '../auth/roles.guard';

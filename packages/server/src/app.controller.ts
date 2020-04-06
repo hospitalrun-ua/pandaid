@@ -1,9 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
-import {ApiProperty, ApiResponse} from '@nestjs/swagger';
+import { ApiResponse} from '@nestjs/swagger';
 import { AppService } from './app.service';
 
 class HelloWorldResponse {
-  @ApiProperty()
   msg: string
 }
 

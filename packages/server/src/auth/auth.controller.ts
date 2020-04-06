@@ -1,11 +1,12 @@
 import { Controller, Post, UseGuards } from '@nestjs/common';
-import { ApiTags, ApiBody } from '@nestjs/swagger';
+import {ApiTags, ApiBody, ApiResponse} from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './local-auth.guard';
 import { JwtAuthGuard } from './jwt-auth.guard';
 import { UserSession } from '../users/users.session.decorator';
 import { User } from '../users/users.interface';
-import { LoginDto } from './dto/login.dto';
+import {LoginDto, LoginResponse} from './dto/login.dto';
+import {ResourcesResponse} from "../resources/resources.dto";
 
 @ApiTags('auth')
 @Controller('auth')
@@ -15,7 +16,8 @@ export class AuthController {
     @UseGuards(LocalAuthGuard)
     @Post('login')
     @ApiBody({ type: LoginDto })
-    login(@UserSession() user: User) {
+    @ApiResponse({ status: 200, type: LoginResponse })
+    login(@UserSession() user: User): LoginResponse {
         return this.authService.login(user);
     }
 
