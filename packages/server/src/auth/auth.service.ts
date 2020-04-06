@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { UsersService } from '../users/users.service';
 import { User } from '../users/users.interface';
-import { LoginDto } from './dto/login.dto';
+import {LoginDto, LoginResponse} from './dto/login.dto';
 
 @Injectable()
 export class AuthService {
@@ -19,7 +19,7 @@ export class AuthService {
         return null;
     }
 
-    login(user: User) {
+    login(user: User): LoginResponse {
         return { token: this.jwtService.sign(user) };
     }
 }
