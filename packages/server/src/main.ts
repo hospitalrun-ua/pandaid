@@ -28,7 +28,8 @@ async function bootstrap() {
     await app.listen(3001);
 }
 
-bootstrap().catch((e) => {
+bootstrap()
+    .catch((e) => {
     logger.error('Failed to bootstrap Nest.js application', {
         err: e.message,
         stack: e.stack,

@@ -95,6 +95,7 @@ exports.isAuthorized = (req, res, next) => {
               req.user = user;
               user.markModified('tokens');
               user.save((err) => {
+                // eslint-disable-next-line no-console
                 if (err) console.log(err);
                 next();
               });
