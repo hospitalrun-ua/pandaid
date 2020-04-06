@@ -17,7 +17,7 @@ export interface Resource {
 }
 
 export enum ResourceStates {
-    CREATED = 0
+    CREATED = 'Created',
 }
 
 export interface Beneficiary {
