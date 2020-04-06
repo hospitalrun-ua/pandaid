@@ -1,4 +1,3 @@
-
 export class ResourcesResponse {
     list: Resource[];
 }
@@ -34,7 +33,7 @@ export class CreateRequestRequest {
     beneficiary: Beneficiary | null;
     contactPerson?: Contact;
     items: Item[];
-    deadline: number
+    deadline: number;
 }
 
 class Item {

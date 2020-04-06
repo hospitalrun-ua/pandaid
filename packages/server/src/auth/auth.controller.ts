@@ -4,7 +4,7 @@ import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './local-auth.guard';
 import { JwtAuthGuard } from './jwt-auth.guard';
 import { UserSession } from '../users/users.session.decorator';
-import { User } from '../users/users.interface';
+import { User } from '@shared/users';
 import { LoginRequest, LoginResponse } from '@shared/auth';
 
 @ApiTags('auth')
