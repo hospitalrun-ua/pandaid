@@ -11,6 +11,10 @@
     "baseUrl": "./",
     "incremental": true,
     "types": ["jest"],
+    "paths": {
+      "@shared/*": ["../shared/*"],
+      "class-validator": ["node_modules/class-validator"]
+    }
   },
-  "exclude": ["node_modules", "dist"]
+  "include": ["./src/**/*.ts", "../shared/**/*.ts"]
 }
