@@ -1,8 +1,8 @@
-import {Injectable} from "@nestjs/common";
+import { Injectable } from '@nestjs/common'
 
 @Injectable()
 export class ResourcesService {
-    public async createResources(): Promise<void> {
-        return;
-    }
+  public createResources(): void {
+    return
+  }
 }
