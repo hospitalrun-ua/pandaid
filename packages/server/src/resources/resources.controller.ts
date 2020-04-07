@@ -25,14 +25,14 @@ export class ResourcesController {
           state: ResourceStates.CREATED,
           beneficiary: {
             name: 'КНП «ЦРЛ Києво-Святошинської районної ради»',
-            address: 'Боярка, вул. Соборності, 51 - адреса лікарні'
+            address: 'Боярка, вул. Соборності, 51 - адреса лікарні',
           },
           contactPerson: {
             name: 'Ivan Ivanox',
             email: 'kanboycrl@gmail.com',
             phone: '38(067)793-53-61',
-            website: 'ks-crl.org.ua'
-          }
+            website: 'ks-crl.org.ua',
+          },
         },
         {
           id: 2,
@@ -43,16 +43,16 @@ export class ResourcesController {
           state: ResourceStates.CREATED,
           beneficiary: {
             name: 'КНП «ЦРЛ Києво-Святошинської районної ради»',
-            address: 'Боярка, вул. Соборності, 51 - адреса лікарні'
+            address: 'Боярка, вул. Соборності, 51 - адреса лікарні',
           },
           contactPerson: {
             name: 'Ivan Ivanox',
             email: 'kanboycrl@gmail.com',
             phone: '38(067)793-53-61',
-            website: 'ks-crl.org.ua'
-          }
-        }
-      ]
+            website: 'ks-crl.org.ua',
+          },
+        },
+      ],
     }
   }
 

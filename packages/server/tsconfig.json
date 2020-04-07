@@ -16,5 +16,5 @@
       "class-validator": ["./node_modules/class-validator"]
     }
   },
-  "include": ["./src/**/*.ts", "../shared/**/*.ts"]
+  "include": ["src", "test", "../shared"]
 }
