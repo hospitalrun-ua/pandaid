@@ -23,11 +23,6 @@ Description from original monorepo boilerplate
 
 ### Included sample packages
 
--   **@sample/components**
-
-    -   [React](https://github.com/facebook/react) components library.
-    -   Built as `cjs` (Node consumption) and `esm` (bundler consumption).
-
 -   **@sample/app**
 
     -   [React](https://github.com/facebook/react) application.
@@ -102,3 +97,13 @@ Lerna asks for new version numbers for packages that changed since last release 
 `yarn lerna publish --force-publish` will force a release of *all* packages, regardless of which ones actually changed. 
 
 Deployment of app/server assets to any actual production servers is not shown.
+
+## Database init
+to init database template run 
+```
+yarn run db:build
+```
+to use database template as active database run:
+```
+yarn run db:cp
+```
