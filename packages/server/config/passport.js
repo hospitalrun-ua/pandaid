@@ -1,42 +1,51 @@
-const passport = require('passport');
-const refresh = require('passport-oauth2-refresh');
-const { Strategy: LocalStrategy } = require('passport-local');
-const _ = require('lodash');
-const moment = require('moment');
+const passport = require('passport')
+const refresh = require('passport-oauth2-refresh')
+const { Strategy: LocalStrategy } = require('passport-local')
+const _ = require('lodash')
+const moment = require('moment')
 
-const User = require('../models/User');
+const User = require('../models/User')
 
 passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
+  done(null, user.id)
+})
 
 passport.deserializeUser((id, done) => {
   User.findById(id, (err, user) => {
-    done(err, user);
-  });
-});
+    done(err, user)
+  })
+})
 
 /**
  * Sign in using Email and Password.
  */
-passport.use(new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
-  User.findOne({ email: email.toLowerCase() }, (err, user) => {
-    if (err) { return done(err); }
-    if (!user) {
-      return done(null, false, { msg: `Email ${email} not found.` });
-    }
-    if (!user.password) {
-      return done(null, false, { msg: 'Your account was registered using a sign-in provider. To enable password login, sign in using a provider, and then set a password under your user profile.' });
-    }
-    user.comparePassword(password, (err, isMatch) => {
-      if (err) { return done(err); }
-      if (isMatch) {
-        return done(null, user);
+passport.use(
+  new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
+    User.findOne({ email: email.toLowerCase() }, (err, user) => {
+      if (err) {
+        return done(err)
       }
-      return done(null, false, { msg: 'Invalid email or password.' });
-    });
-  });
-}));
+      if (!user) {
+        return done(null, false, { msg: `Email ${email} not found.` })
+      }
+      if (!user.password) {
+        return done(null, false, {
+          msg:
+            'Your account was registered using a sign-in provider. To enable password login, sign in using a provider, and then set a password under your user profile.',
+        })
+      }
+      user.comparePassword(password, (err, isMatch) => {
+        if (err) {
+          return done(err)
+        }
+        if (isMatch) {
+          return done(null, user)
+        }
+        return done(null, false, { msg: 'Invalid email or password.' })
+      })
+    })
+  })
+)
 
 /**
  * OAuth Strategy Overview
@@ -58,17 +67,17 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, (email, password, don
  */
 exports.isAuthenticated = (req, res, next) => {
   if (req.isAuthenticated()) {
-    return next();
+    return next()
   }
-  res.redirect('/login');
-};
+  res.redirect('/login')
+}
 
 /**
  * Authorization Required middleware.
  */
 exports.isAuthorized = (req, res, next) => {
-  const provider = req.path.split('/')[2];
-  const token = req.user.tokens.find((token) => token.kind === provider);
+  const provider = req.path.split('/')[2]
+  const token = req.user.tokens.find((token) => token.kind === provider)
   if (token) {
     // Is there an access token expiration and access token expired?
     // Yes: Is there a refresh token?
@@ -80,35 +89,36 @@ exports.isAuthorized = (req, res, next) => {
     if (token.accessTokenExpires && moment(token.accessTokenExpires).isBefore(moment().subtract(1, 'minutes'))) {
       if (token.refreshToken) {
         if (token.refreshTokenExpires && moment(token.refreshTokenExpires).isBefore(moment().subtract(1, 'minutes'))) {
-          res.redirect(`/auth/${provider}`);
+          res.redirect(`/auth/${provider}`)
         } else {
           refresh.requestNewAccessToken(`${provider}`, token.refreshToken, (err, accessToken, refreshToken, params) => {
             User.findById(req.user.id, (err, user) => {
               user.tokens.some((tokenObject) => {
                 if (tokenObject.kind === provider) {
-                  tokenObject.accessToken = accessToken;
-                  if (params.expires_in) tokenObject.accessTokenExpires = moment().add(params.expires_in, 'seconds').format();
-                  return true;
+                  tokenObject.accessToken = accessToken
+                  if (params.expires_in)
+                    tokenObject.accessTokenExpires = moment().add(params.expires_in, 'seconds').format()
+                  return true
                 }
-                return false;
-              });
-              req.user = user;
-              user.markModified('tokens');
+                return false
+              })
+              req.user = user
+              user.markModified('tokens')
               user.save((err) => {
                 // eslint-disable-next-line no-console
-                if (err) console.log(err);
-                next();
-              });
-            });
-          });
+                if (err) console.log(err)
+                next()
+              })
+            })
+          })
         }
       } else {
-        res.redirect(`/auth/${provider}`);
+        res.redirect(`/auth/${provider}`)
       }
     } else {
-      next();
+      next()
     }
   } else {
-    res.redirect(`/auth/${provider}`);
+    res.redirect(`/auth/${provider}`)
   }
-};
+}
