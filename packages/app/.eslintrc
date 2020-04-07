@@ -1,18 +1,15 @@
 {
+    "env": {
+        "browser": true,
+    },
     "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/recommended",
-        "prettier",
-        "prettier/@typescript-eslint",
         "prettier/react"
     ],
-    "plugins": ["react-hooks", "no-only-tests"],
+    "plugins": ["react-hooks"],
     "rules": {
         "react/prop-types": "off",
         "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-    },
+        "react-hooks/exhaustive-deps": "warn"
+    }
 }
