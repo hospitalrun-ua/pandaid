@@ -7,12 +7,13 @@
     "clean": "lerna run clean --stream --parallel",
     "build": "lerna run build --stream --parallel",
     "link": "lerna link --force-local",
-    "lint": "eslint . --ext .js,.ts,.tsx -f codeframe",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint-fix": "yarn run lint --fix",
     "pretest": "yarn typecheck && yarn lint",
     "test": "yarn test:unit",
     "test:unit": "mocha \"packages/**/test/**/*.spec.ts?(x)\"",
     "start-frontend": "yarn workspace app start",
-    "start": "node app.js",
+    "start": "yarn workspace server start",
     "typecheck": "tsc --noEmit",
     "prettify": "npx prettier \"packages/**/*.{js,ts,tsx}\" --write",
     "start:eb": "yarn install && yarn start"
@@ -33,11 +34,15 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-no-only-tests": "^2.4.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "html-webpack-plugin": "^4.0.2",
+    "husky": "^4.2.3",
     "lerna": "^3.20.2",
+    "lint-staged": "^10.1.2",
     "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
@@ -47,6 +52,16 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --cache --config .eslintrc --quiet"
+    ]
   },
   "license": "MIT",
   "private": true

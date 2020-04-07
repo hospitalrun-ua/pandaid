@@ -1,0 +1,15 @@
+{
+    "env": {
+        "browser": true,
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "prettier/react"
+    ],
+    "plugins": ["react-hooks"],
+    "rules": {
+        "react/prop-types": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}
