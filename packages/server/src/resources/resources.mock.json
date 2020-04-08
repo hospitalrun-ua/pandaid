@@ -1,1 +1,542 @@
-[{"id":1,"name":"Апарат ШВЛ високого класу","quantity":5,"quantityCovered":0,"price":5500,"state":"Created","beneficiary":{"name":"КНП «ЦРЛ Києво-Святошинської районної ради»","address":"Боярка, вул. Соборності, 51 - адреса лікарні"},"contactPerson":{"name":"Ivan Ivanox","email":"kanboycrl@gmail.com","phone":"38(067)793-53-61","website":"ks-crl.org.ua"}},{"id":2,"name":"Респіратор класу захисту FFP3","quantity":13455,"quantityCovered":400,"price":134,"state":"Created","beneficiary":{"name":"КНП «ЦРЛ Києво-Святошинської районної ради»","address":"Боярка, вул. Соборності, 51 - адреса лікарні"},"contactPerson":{"name":"Ivan Ivanox","email":"kanboycrl@gmail.com","phone":"38(067)793-53-61","website":"ks-crl.org.ua"}},{"id":3,"name":"Портативний електрокардіограф","quantity":150,"quantityCovered":1,"price":14570,"state":"Created","beneficiary":{"name":"ОКСФОРД МЕДІКАЛ, ПРИВАТНА МЕДИЧНА КЛІНІКА","address":"м. Львів, просп. Чорновола, 45а"},"contactPerson":{"name":"Лариса Федорович Крамаренко","email":"oxford.lviv@gmail.com","phone":"(050)2450000","website":"https://www.lviv.oxford-med.com.ua/"}},{"id":4,"name":"Портативний ультразвуковий сканер","quantity":15,"quantityCovered":0,"price":13412,"state":"Created","beneficiary":{"name":"ДЕРМАТО-КОСМЕТОЛОГІЧНИЙ ЦЕНТР","address":"м. Львів, вул. Дороша, 3, к. 1"},"contactPerson":{"name":"Пономаренко Ігор","email":"valeria.antonen@ujaw.net","phone":"+38(0056)838863","website":"kramarcuk.net"}},{"id":5,"name":"Термометр клінічний інфрачервоний ручний","quantity":100570,"quantityCovered":379,"price":1700,"state":"Created","beneficiary":{"name":"Медик Плюс, ПП","address":"Харківська область, місто Харків, просп. Генерала Жадова, 91"},"contactPerson":{"name":"Віра Євгенович Петренко","email":"baceslav05@facetlabs.net","phone":"0507865951","website":"zaharcuk.org"}},{"id":6,"name":"Операційна мобільна тумба з шухлядами","quantity":870,"quantityCovered":0,"price":5789,"state":"Created","beneficiary":{"name":"КНМП \"Кременчуцька перша міська лікарня імені О. Т. Богаєвського\"","address":"Кременчук, Вулиця Лікаря О. Богаєвського, 60/1"},"contactPerson":{"name":"Юрій Янович Боднаренко","email":"mikituk.biktor@gmail.com","phone":"+380634485818","website":"panasuk.org"}},{"id":7,"name":"Транспортний візок для брудної білизни","quantity":71,"quantityCovered":1,"price":3678,"state":"Created","beneficiary":{"name":"Луцька міська клінічна лікарня","address":"м. Луцьк, Проспект Відродження, 13"},"contactPerson":{"name":"Броваренко Богдан","email":"lmkl@lmkl.lutsk.ua","phone":"38(067)793-53-61","website":"http://www.lmkl.lutsk.ua"}},{"id":8,"name":"Портативний монітор пацієнта з аксесуарами","quantity":10780,"quantityCovered":791,"price":24586,"state":"Created","beneficiary":{"name":"Клінічна лікарня «Феофанія»","address":"Київ, вул. Заболотного, 21"},"contactPerson":{"name":"Георгій Сергійович Шинкаренко","email":"danil95@gmail.com","phone":"+38(045)4300824","website":"http://www.feofaniya.org"}},{"id":9,"name":"Пульсоксиметр-прищіпка універсальний","quantity":945000,"quantityCovered":375000,"price":7005,"state":"Created","beneficiary":{"name":"Національний військово-медичний клінічний центр «Головний військовий клінічний госпіталь»","address":"Київ, вул. Госпітальна, 18"},"contactPerson":{"name":"Антоненко Катерина Михайлович","email":"gospital@gvkg.kiev.ua","phone":"(095) 821-24-91","website":"gvkg.kiev.ua"}},{"id":10,"name":"Пульсоксиметр настільний","quantity":13455,"quantityCovered":400,"price":134,"state":"Created","beneficiary":{"name":"Київська міська клінічна лікарня швидкої медичної допомоги","address":"Київ, вул. Братиславська, 3"},"contactPerson":{"name":"Тимофій Володимирович Лисенко","email":"gennadij.sereda@gmail.com","phone":"0962126496","website":"kravcenko.ua"}},{"id":11,"name":"Апарат ШВЛ високого класу","quantity":7,"quantityCovered":0,"price":5500,"state":"Created","beneficiary":{"name":"Полтавська обласна клінічна лікарня імені М.В. Скліфосовського","address":"місто Полтава, вул. Шевченка, 23"},"contactPerson":{"name":"Максим Васильович Микитюк","email":"info@okl.poltava.ua","phone":"38(067)793-53-61","website":"http://okl.poltava.ua/"}},{"id":12,"name":"Респіратор класу захисту FFP3","quantity":100,"quantityCovered":17,"price":134,"state":"Created","beneficiary":{"name":"Тернопільська обласна дитяча клінічна лікарня","address":"вул. Академіка Сахарова, 2"},"contactPerson":{"name":"Григорій Олексійович Крамаренко","email":"petrenko.afg@gmail.com","phone":"0671042986","website":"todl.com.ua"}},{"id":13,"name":"Пульсоксиметр пальчиковий з аксесуарами","quantity":127500,"quantityCovered":791,"price":5778,"state":"Created","beneficiary":{"name":"Тернопільська університетська лікарня","address":"вул. Клінічна, 1, м. Тернопіль"},"contactPerson":{"name":"Василь Валентинович Романченко","email":"brovarcuk@gmail.com","phone":"(0-352) 23-58-86","website":"terokkl@ukr.net"}},{"id":14,"name":"Бахіли медичні, з резинкою","quantity":1227500,"quantityCovered":575471,"price":120,"state":"Created","beneficiary":{"name":"Інститут Фізичних Методів Лікування імені тов. Воровського","address":"м. Чернігів просп. Миру, 36"},"contactPerson":{"name":"Валентин Миколайович Мірошниченко","email":"valentyn.miroshnichenko@ukr.net","phone":"+380998057048","website":"sevcenko.com"}},{"id":15,"name":"Взуття медичне, резинове/ПВХ, багаторазового використання, пара, розмір 42-44","quantity":7594,"quantityCovered":0,"price":570,"state":"Created","beneficiary":{"name":"Комунальне некомерційне підприємство \"6-а міська поліклініка м.Львова\"","address":"Львівська обл., місто Львів, Личаківський район ВУЛИЦЯ МЕДОВОЇ ПЕЧЕРИ буд. 1"},"contactPerson":{"name":"Середа Іван Андрійович","email":"vladislav.miros@gmail.com","phone":"+380994372364","website":"ponomarenko.ua"}},{"id":16,"name":"Шапочка хірургічна, на зав’язках, неткана, коробка/100 шт.","quantity":700,"quantityCovered":100,"price":150,"state":"Created","beneficiary":{"name":"КНП «РОГАТИНСЬКИЙ ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ»","address":"Івано-Франківська обл., Рогатинський район, місто Рогатин ВУЛИЦЯ ГАЛИЦЬКА буд. 119А"},"contactPerson":{"name":"Пономаренко Максим Романович","email":"volodimir.miros@gmail.com","phone":"+380674927448","website":"at-lsin.org.ua"}},{"id":17,"name":"Костюм захисний, CatIII, тип 6b, L-XL","quantity":570,"quantityCovered":17,"price":18750,"state":"Created","beneficiary":{"name":"КНП «5-а міська клінічна поліклініка м. Львова»","address":"Львівська обл., місто Львів, Залізничний район ВУЛИЦЯ ВИГОВСЬКОГО буд. 32"},"contactPerson":{"name":"Микола Борисович Крамарчук","email":"gvasilcuk@gmail.com","phone":"+380996938330","website":"vasilcuk.net"}},{"id":18,"name":"Маска високої фільтрації, FFP2/N95, баз клапану, нестерильна","quantity":150,"quantityCovered":1,"price":800,"state":"Created","beneficiary":{"name":"КНП «ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ УМАНСЬКОЇ РАЙОННОЇ РАДИ»","address":"Черкаська обл., Уманський район, село Піківець ВУЛИЦЯ РОБІТНИЧА буд. 35"},"contactPerson":{"name":"Ілля Миколайович Таращук","email":"raisa.zaharcuk@gmail.com","phone":"+380992215961","website":"uman-med.ua"}},{"id":19,"name":"Концентратор кисню/НАБІР","quantity":13455,"quantityCovered":400,"price":134,"state":"Created","beneficiary":{"name":"Богуславський районний центр первинної медико-санітарної допомоги","address":"Київська обл., Богуславський район, місто Богуслав ВУЛИЦЯ ФРАНКА буд. 27"},"contactPerson":{"name":"Шинкаренко Сергій Романович","email":"kanboymn@gmail.com","phone":"+380673655237","website":"sereda.net.ua"}},{"id":20,"name":"Респіратор класу захисту FFP3","quantity":13455,"quantityCovered":400,"price":134,"state":"Created","beneficiary":{"name":"КНП «Центр первинної медико-санітарної допомоги Комишуваської селищної ради Оріхівського району Запорізької області»","address":"Запорізька обл., Оріхівський район, селище міського типу Комишуваха ВУЛИЦЯ СМИРНОВА буд. 3"},"contactPerson":{"name":"Броваренко Мирослав","email":"brovarcuk176-1@gmail.com","phone":"38(067)793-53-61","website":"brovarcuk-med.org.ua"}},{"id":21,"name":"Дезінфікуючий засіб для рук, вміст спирту >60% 500 мл, з помпою","quantity":900,"quantityCovered":71,"price":100,"state":"Created","beneficiary":{"name":"КНП «Центр первинної медико-санітарної допомоги Нижньовербізької сільської ради об'єднаної територіальної громади»","address":"Івано-Франківська обл., Коломийський район, село Нижній Вербіж ВУЛИЦЯ УКРАЇНСЬКА буд. 68"},"contactPerson":{"name":"Кирил Петрович Петренко","email":"petrenko1971@gmail.com","phone":"+380501379203","website":"melnicenko.org"}},{"id":22,"name":"Катетери аспіраційні з вакуумним контролем (одноразового використання)","quantity":71,"quantityCovered":0,"price":900,"state":"Created","beneficiary":{"name":"КНП «Краснопільський центр первинної медико-санітарної допомоги»","address":"Сумська обл., Краснопільський район, селище міського типу Краснопілля ВУЛИЦЯ ПЕРЕМОГИ буд. 24 Б"},"contactPerson":{"name":"Сергій Євгенович Крамарчук","email":"kkramarchuk11947l@gmail.com","phone":"+38(0431)778447","website":"krasnopillya.org.ua"}},{"id":23,"name":"Етанол розчин: 96%","quantity":1700,"quantityCovered":100,"price":80,"state":"Created","beneficiary":{"name":"КНП «Великомихайлівський центр первинної медико-санітарної допомоги»","address":"Одеська обл., Великомихайлівський район, селище міського типу Велика Михайлівка ВУЛИЦЯ ЦЕНТРАЛЬНА буд. 248"},"contactPerson":{"name":"Данил Петрович Дмитренко","email":"odessavelicomehailivsk@gmail.com","phone":"0991559952","website":"velikom-med.org.ua"}},{"id":24,"name":"Набір для інфузій, стерильний, одноразового використання","quantity":17890,"quantityCovered":1615,"price":1027,"state":"Created","beneficiary":{"name":"КНП «МІСЬКА ДИТЯЧА ПОЛІКЛІНІКА № 4 ХАРКІВСЬКОЇ МІСЬКОЇ РАДИ»","address":"Харківська обл., місто Харків, Шевченківський район ВУЛИЦЯ ДВАДЦЯТЬ ТРЕТЬОГО СЕРПНЯ буд. 29"},"contactPerson":{"name":"Лев Петрович Шевчук","email":"kharkivua@gmail.com","phone":"+380631175283","website":"bodnarenko.net.ua"}},{"id":25,"name":"Витратомір кисню, 0 – 15 л/хв","quantity":5,"quantityCovered":0,"price":1384,"state":"Created","beneficiary":{"name":"КНП «Березівський районний центр первинної медико-санітарної допомоги»","address":"Одеська обл., Березівський район, місто Березівка ВУЛИЦЯ БОЛЬНИЧНА буд. 6"},"contactPerson":{"name":"Юрій Петрович Кравчук","email":"ivan.vasilcuk@gmail.com","phone":"0967806386","website":"berezivsk-odessa.org.ua"}},{"id":26,"name":"Респіратор класу захисту FFP3","quantity":13455,"quantityCovered":400,"price":134,"state":"Created","beneficiary":{"name":"Центр первинної медико-санітарної допомоги Мар'їнської районної ради","address":"Донецька обл., Мар'їнський район, місто Мар'їнка ПРОСПЕКТ ДРУЖБИ буд. 22-А"},"contactPerson":{"name":"Броваренко Ярослав Романович","email":"brovarenko1982@ukr.net","phone":"38(067)793-53-61","website":"mariinka-don.ua"}},{"id":27,"name":"Аналізатор кисню, ультразвуковий, ручний","quantity":15,"quantityCovered":1,"price":17800,"state":"Created","beneficiary":{"name":"КНП «ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ ЛЮБЕШІВСЬКОЇ СЕЛИЩНОЇ РАДИ»","address":"Волинська обл., Любешівський район, селище міського типу Любешів ВУЛИЦЯ НЕЗАЛЕЖНОСТІ буд. 3"},"contactPerson":{"name":"Микитюк Олександр Федорович","email":"mykitukua@gmail.com","phone":"38(067)793-53-61","website":"vubishevska-rada.ua"}},{"id":28,"name":"Концентратор кисню, 5 л/хв","quantity":17,"quantityCovered":10,"price":178901,"state":"Created","beneficiary":{"name":"КНП «Олевський Центр первинної медичної допомоги Олевської міської ради»","address":"Житомирська обл., Олевський район, місто Олевськ ВУЛИЦЯ СВЯТО-МИКОЛАЇВСЬКА буд. 46"},"contactPerson":{"name":"Григорій Сергійович Пономарчук","email":"ponomarchuuk0192@gmail.com","phone":"+380635349277","website":"zhytomyr.org.ua"}},{"id":29,"name":"Канюлі назальні, кисневі, для дорослих, одноразового використання","quantity":57,"quantityCovered":5,"price":20,"state":"Created","beneficiary":{"name":"КНП «Дрогобицька районна лікарня»","address":"Львівська обл., Дрогобицький район, село Нижні Гаї ВУЛ. ВЕРБОВА буд. 17"},"contactPerson":{"name":"Броваренко Михайло Володимирович","email":"brovarenko18972@gmail.com","phone":"+380635652370","website":"drogobytsk.ua"}},{"id":30,"name":"Ларингоскопічний набір для дорослих, дітей","quantity":700,"quantityCovered":50,"price":10780,"state":"Created","beneficiary":{"name":"Товариство з обмеженою відповідальністю \"Сімейна клініка \"МЕДЕКСПЕРТ\"","address":"Дніпропетровська обл., місто Дніпро, Центральний район ПРОСПЕКТ БОГДАНА ХМЕЛЬНИЦЬКОГО буд. 12 Г прим. 68"},"contactPerson":{"name":"Шевченко Bалерій Борисович","email":"valery.shevchenkol@gmail.com","phone":"+380634626451","website":"medexpert.ua"}}]
+[
+    {
+        "id": 1,
+        "name": "Апарат ШВЛ високого класу",
+        "quantity": 5,
+        "quantityCovered": 0,
+        "price": 5500,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «ЦРЛ Києво-Святошинської районної ради»",
+            "address": "Боярка, вул. Соборності, 51 - адреса лікарні"
+        },
+        "contactPerson": {
+            "name": "Ivan Ivanox",
+            "email": "kanboycrl@gmail.com",
+            "phone": "38(067)793-53-61",
+            "website": "ks-crl.org.ua"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Респіратор класу захисту FFP3",
+        "quantity": 13455,
+        "quantityCovered": 400,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «ЦРЛ Києво-Святошинської районної ради»",
+            "address": "Боярка, вул. Соборності, 51 - адреса лікарні"
+        },
+        "contactPerson": {
+            "name": "Ivan Ivanox",
+            "email": "kanboycrl@gmail.com",
+            "phone": "38(067)793-53-61",
+            "website": "ks-crl.org.ua"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Портативний електрокардіограф",
+        "quantity": 150,
+        "quantityCovered": 1,
+        "price": 14570,
+        "state": "Created",
+        "beneficiary": {
+            "name": "ОКСФОРД МЕДІКАЛ, ПРИВАТНА МЕДИЧНА КЛІНІКА",
+            "address": "м. Львів, просп. Чорновола, 45а"
+        },
+        "contactPerson": {
+            "name": "Лариса Федорович Крамаренко",
+            "email": "oxford.lviv@gmail.com",
+            "phone": "(050)2450000",
+            "website": "https://www.lviv.oxford-med.com.ua/"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Портативний ультразвуковий сканер",
+        "quantity": 15,
+        "quantityCovered": 0,
+        "price": 13412,
+        "state": "Created",
+        "beneficiary": {
+            "name": "ДЕРМАТО-КОСМЕТОЛОГІЧНИЙ ЦЕНТР",
+            "address": "м. Львів, вул. Дороша, 3, к. 1"
+        },
+        "contactPerson": {
+            "name": "Пономаренко Ігор",
+            "email": "valeria.antonen@ujaw.net",
+            "phone": "+38(0056)838863",
+            "website": "kramarcuk.net"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Термометр клінічний інфрачервоний ручний",
+        "quantity": 100570,
+        "quantityCovered": 379,
+        "price": 1700,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Медик Плюс, ПП",
+            "address": "Харківська область, місто Харків, просп. Генерала Жадова, 91"
+        },
+        "contactPerson": {
+            "name": "Віра Євгенович Петренко",
+            "email": "baceslav05@facetlabs.net",
+            "phone": "0507865951",
+            "website": "zaharcuk.org"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Операційна мобільна тумба з шухлядами",
+        "quantity": 870,
+        "quantityCovered": 0,
+        "price": 5789,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНМП \"Кременчуцька перша міська лікарня імені О. Т. Богаєвського\"",
+            "address": "Кременчук, Вулиця Лікаря О. Богаєвського, 60/1"
+        },
+        "contactPerson": {
+            "name": "Юрій Янович Боднаренко",
+            "email": "mikituk.biktor@gmail.com",
+            "phone": "+380634485818",
+            "website": "panasuk.org"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Транспортний візок для брудної білизни",
+        "quantity": 71,
+        "quantityCovered": 1,
+        "price": 3678,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Луцька міська клінічна лікарня",
+            "address": "м. Луцьк, Проспект Відродження, 13"
+        },
+        "contactPerson": {
+            "name": "Броваренко Богдан",
+            "email": "lmkl@lmkl.lutsk.ua",
+            "phone": "38(067)793-53-61",
+            "website": "http://www.lmkl.lutsk.ua"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Портативний монітор пацієнта з аксесуарами",
+        "quantity": 10780,
+        "quantityCovered": 791,
+        "price": 24586,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Клінічна лікарня «Феофанія»",
+            "address": "Київ, вул. Заболотного, 21"
+        },
+        "contactPerson": {
+            "name": "Георгій Сергійович Шинкаренко",
+            "email": "danil95@gmail.com",
+            "phone": "+38(045)4300824",
+            "website": "http://www.feofaniya.org"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Пульсоксиметр-прищіпка універсальний",
+        "quantity": 945000,
+        "quantityCovered": 375000,
+        "price": 7005,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Національний військово-медичний клінічний центр «Головний військовий клінічний госпіталь»",
+            "address": "Київ, вул. Госпітальна, 18"
+        },
+        "contactPerson": {
+            "name": "Антоненко Катерина Михайлович",
+            "email": "gospital@gvkg.kiev.ua",
+            "phone": "(095) 821-24-91",
+            "website": "gvkg.kiev.ua"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Пульсоксиметр настільний",
+        "quantity": 13455,
+        "quantityCovered": 400,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Київська міська клінічна лікарня швидкої медичної допомоги",
+            "address": "Київ, вул. Братиславська, 3"
+        },
+        "contactPerson": {
+            "name": "Тимофій Володимирович Лисенко",
+            "email": "gennadij.sereda@gmail.com",
+            "phone": "0962126496",
+            "website": "kravcenko.ua"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Апарат ШВЛ високого класу",
+        "quantity": 7,
+        "quantityCovered": 0,
+        "price": 5500,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Полтавська обласна клінічна лікарня імені М.В. Скліфосовського",
+            "address": "місто Полтава, вул. Шевченка, 23"
+        },
+        "contactPerson": {
+            "name": "Максим Васильович Микитюк",
+            "email": "info@okl.poltava.ua",
+            "phone": "38(067)793-53-61",
+            "website": "http://okl.poltava.ua/"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Респіратор класу захисту FFP3",
+        "quantity": 100,
+        "quantityCovered": 17,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Тернопільська обласна дитяча клінічна лікарня",
+            "address": "вул. Академіка Сахарова, 2"
+        },
+        "contactPerson": {
+            "name": "Григорій Олексійович Крамаренко",
+            "email": "petrenko.afg@gmail.com",
+            "phone": "0671042986",
+            "website": "todl.com.ua"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Пульсоксиметр пальчиковий з аксесуарами",
+        "quantity": 127500,
+        "quantityCovered": 791,
+        "price": 5778,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Тернопільська університетська лікарня",
+            "address": "вул. Клінічна, 1, м. Тернопіль"
+        },
+        "contactPerson": {
+            "name": "Василь Валентинович Романченко",
+            "email": "brovarcuk@gmail.com",
+            "phone": "(0-352) 23-58-86",
+            "website": "terokkl@ukr.net"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Бахіли медичні, з резинкою",
+        "quantity": 1227500,
+        "quantityCovered": 575471,
+        "price": 120,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Інститут Фізичних Методів Лікування імені тов. Воровського",
+            "address": "м. Чернігів просп. Миру, 36"
+        },
+        "contactPerson": {
+            "name": "Валентин Миколайович Мірошниченко",
+            "email": "valentyn.miroshnichenko@ukr.net",
+            "phone": "+380998057048",
+            "website": "sevcenko.com"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Взуття медичне, резинове/ПВХ, багаторазового використання, пара, розмір 42-44",
+        "quantity": 7594,
+        "quantityCovered": 0,
+        "price": 570,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Комунальне некомерційне підприємство \"6-а міська поліклініка м.Львова\"",
+            "address": "Львівська обл., місто Львів, Личаківський район ВУЛИЦЯ МЕДОВОЇ ПЕЧЕРИ буд. 1"
+        },
+        "contactPerson": {
+            "name": "Середа Іван Андрійович",
+            "email": "vladislav.miros@gmail.com",
+            "phone": "+380994372364",
+            "website": "ponomarenko.ua"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Шапочка хірургічна, на зав’язках, неткана, коробка/100 шт.",
+        "quantity": 700,
+        "quantityCovered": 100,
+        "price": 150,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «РОГАТИНСЬКИЙ ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ»",
+            "address": "Івано-Франківська обл., Рогатинський район, місто Рогатин ВУЛИЦЯ ГАЛИЦЬКА буд. 119А"
+        },
+        "contactPerson": {
+            "name": "Пономаренко Максим Романович",
+            "email": "volodimir.miros@gmail.com",
+            "phone": "+380674927448",
+            "website": "at-lsin.org.ua"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Костюм захисний, CatIII, тип 6b, L-XL",
+        "quantity": 570,
+        "quantityCovered": 17,
+        "price": 18750,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «5-а міська клінічна поліклініка м. Львова»",
+            "address": "Львівська обл., місто Львів, Залізничний район ВУЛИЦЯ ВИГОВСЬКОГО буд. 32"
+        },
+        "contactPerson": {
+            "name": "Микола Борисович Крамарчук",
+            "email": "gvasilcuk@gmail.com",
+            "phone": "+380996938330",
+            "website": "vasilcuk.net"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Маска високої фільтрації, FFP2/N95, баз клапану, нестерильна",
+        "quantity": 150,
+        "quantityCovered": 1,
+        "price": 800,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ УМАНСЬКОЇ РАЙОННОЇ РАДИ»",
+            "address": "Черкаська обл., Уманський район, село Піківець ВУЛИЦЯ РОБІТНИЧА буд. 35"
+        },
+        "contactPerson": {
+            "name": "Ілля Миколайович Таращук",
+            "email": "raisa.zaharcuk@gmail.com",
+            "phone": "+380992215961",
+            "website": "uman-med.ua"
+        }
+    },
+    {
+        "id": 19,
+        "name": "Концентратор кисню/НАБІР",
+        "quantity": 13455,
+        "quantityCovered": 400,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Богуславський районний центр первинної медико-санітарної допомоги",
+            "address": "Київська обл., Богуславський район, місто Богуслав ВУЛИЦЯ ФРАНКА буд. 27"
+        },
+        "contactPerson": {
+            "name": "Шинкаренко Сергій Романович",
+            "email": "kanboymn@gmail.com",
+            "phone": "+380673655237",
+            "website": "sereda.net.ua"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Респіратор класу захисту FFP3",
+        "quantity": 13455,
+        "quantityCovered": 400,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Центр первинної медико-санітарної допомоги Комишуваської селищної ради Оріхівського району Запорізької області»",
+            "address": "Запорізька обл., Оріхівський район, селище міського типу Комишуваха ВУЛИЦЯ СМИРНОВА буд. 3"
+        },
+        "contactPerson": {
+            "name": "Броваренко Мирослав",
+            "email": "brovarcuk176-1@gmail.com",
+            "phone": "38(067)793-53-61",
+            "website": "brovarcuk-med.org.ua"
+        }
+    },
+    {
+        "id": 21,
+        "name": "Дезінфікуючий засіб для рук, вміст спирту >60% 500 мл, з помпою",
+        "quantity": 900,
+        "quantityCovered": 71,
+        "price": 100,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Центр первинної медико-санітарної допомоги Нижньовербізької сільської ради об'єднаної територіальної громади»",
+            "address": "Івано-Франківська обл., Коломийський район, село Нижній Вербіж ВУЛИЦЯ УКРАЇНСЬКА буд. 68"
+        },
+        "contactPerson": {
+            "name": "Кирил Петрович Петренко",
+            "email": "petrenko1971@gmail.com",
+            "phone": "+380501379203",
+            "website": "melnicenko.org"
+        }
+    },
+    {
+        "id": 22,
+        "name": "Катетери аспіраційні з вакуумним контролем (одноразового використання)",
+        "quantity": 71,
+        "quantityCovered": 0,
+        "price": 900,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Краснопільський центр первинної медико-санітарної допомоги»",
+            "address": "Сумська обл., Краснопільський район, селище міського типу Краснопілля ВУЛИЦЯ ПЕРЕМОГИ буд. 24 Б"
+        },
+        "contactPerson": {
+            "name": "Сергій Євгенович Крамарчук",
+            "email": "kkramarchuk11947l@gmail.com",
+            "phone": "+38(0431)778447",
+            "website": "krasnopillya.org.ua"
+        }
+    },
+    {
+        "id": 23,
+        "name": "Етанол розчин: 96%",
+        "quantity": 1700,
+        "quantityCovered": 100,
+        "price": 80,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Великомихайлівський центр первинної медико-санітарної допомоги»",
+            "address": "Одеська обл., Великомихайлівський район, селище міського типу Велика Михайлівка ВУЛИЦЯ ЦЕНТРАЛЬНА буд. 248"
+        },
+        "contactPerson": {
+            "name": "Данил Петрович Дмитренко",
+            "email": "odessavelicomehailivsk@gmail.com",
+            "phone": "0991559952",
+            "website": "velikom-med.org.ua"
+        }
+    },
+    {
+        "id": 24,
+        "name": "Набір для інфузій, стерильний, одноразового використання",
+        "quantity": 17890,
+        "quantityCovered": 1615,
+        "price": 1027,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «МІСЬКА ДИТЯЧА ПОЛІКЛІНІКА № 4 ХАРКІВСЬКОЇ МІСЬКОЇ РАДИ»",
+            "address": "Харківська обл., місто Харків, Шевченківський район ВУЛИЦЯ ДВАДЦЯТЬ ТРЕТЬОГО СЕРПНЯ буд. 29"
+        },
+        "contactPerson": {
+            "name": "Лев Петрович Шевчук",
+            "email": "kharkivua@gmail.com",
+            "phone": "+380631175283",
+            "website": "bodnarenko.net.ua"
+        }
+    },
+    {
+        "id": 25,
+        "name": "Витратомір кисню, 0 – 15 л/хв",
+        "quantity": 5,
+        "quantityCovered": 0,
+        "price": 1384,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Березівський районний центр первинної медико-санітарної допомоги»",
+            "address": "Одеська обл., Березівський район, місто Березівка ВУЛИЦЯ БОЛЬНИЧНА буд. 6"
+        },
+        "contactPerson": {
+            "name": "Юрій Петрович Кравчук",
+            "email": "ivan.vasilcuk@gmail.com",
+            "phone": "0967806386",
+            "website": "berezivsk-odessa.org.ua"
+        }
+    },
+    {
+        "id": 26,
+        "name": "Респіратор класу захисту FFP3",
+        "quantity": 13455,
+        "quantityCovered": 400,
+        "price": 134,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Центр первинної медико-санітарної допомоги Мар'їнської районної ради",
+            "address": "Донецька обл., Мар'їнський район, місто Мар'їнка ПРОСПЕКТ ДРУЖБИ буд. 22-А"
+        },
+        "contactPerson": {
+            "name": "Броваренко Ярослав Романович",
+            "email": "brovarenko1982@ukr.net",
+            "phone": "38(067)793-53-61",
+            "website": "mariinka-don.ua"
+        }
+    },
+    {
+        "id": 27,
+        "name": "Аналізатор кисню, ультразвуковий, ручний",
+        "quantity": 15,
+        "quantityCovered": 1,
+        "price": 17800,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «ЦЕНТР ПЕРВИННОЇ МЕДИКО-САНІТАРНОЇ ДОПОМОГИ ЛЮБЕШІВСЬКОЇ СЕЛИЩНОЇ РАДИ»",
+            "address": "Волинська обл., Любешівський район, селище міського типу Любешів ВУЛИЦЯ НЕЗАЛЕЖНОСТІ буд. 3"
+        },
+        "contactPerson": {
+            "name": "Микитюк Олександр Федорович",
+            "email": "mykitukua@gmail.com",
+            "phone": "38(067)793-53-61",
+            "website": "vubishevska-rada.ua"
+        }
+    },
+    {
+        "id": 28,
+        "name": "Концентратор кисню, 5 л/хв",
+        "quantity": 17,
+        "quantityCovered": 10,
+        "price": 178901,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Олевський Центр первинної медичної допомоги Олевської міської ради»",
+            "address": "Житомирська обл., Олевський район, місто Олевськ ВУЛИЦЯ СВЯТО-МИКОЛАЇВСЬКА буд. 46"
+        },
+        "contactPerson": {
+            "name": "Григорій Сергійович Пономарчук",
+            "email": "ponomarchuuk0192@gmail.com",
+            "phone": "+380635349277",
+            "website": "zhytomyr.org.ua"
+        }
+    },
+    {
+        "id": 29,
+        "name": "Канюлі назальні, кисневі, для дорослих, одноразового використання",
+        "quantity": 57,
+        "quantityCovered": 5,
+        "price": 20,
+        "state": "Created",
+        "beneficiary": {
+            "name": "КНП «Дрогобицька районна лікарня»",
+            "address": "Львівська обл., Дрогобицький район, село Нижні Гаї ВУЛ. ВЕРБОВА буд. 17"
+        },
+        "contactPerson": {
+            "name": "Броваренко Михайло Володимирович",
+            "email": "brovarenko18972@gmail.com",
+            "phone": "+380635652370",
+            "website": "drogobytsk.ua"
+        }
+    },
+    {
+        "id": 30,
+        "name": "Ларингоскопічний набір для дорослих, дітей",
+        "quantity": 700,
+        "quantityCovered": 50,
+        "price": 10780,
+        "state": "Created",
+        "beneficiary": {
+            "name": "Товариство з обмеженою відповідальністю \"Сімейна клініка \"МЕДЕКСПЕРТ\"",
+            "address": "Дніпропетровська обл., місто Дніпро, Центральний район ПРОСПЕКТ БОГДАНА ХМЕЛЬНИЦЬКОГО буд. 12 Г прим. 68"
+        },
+        "contactPerson": {
+            "name": "Шевченко Bалерій Борисович",
+            "email": "valery.shevchenkol@gmail.com",
+            "phone": "+380634626451",
+            "website": "medexpert.ua"
+        }
+    }
+]
