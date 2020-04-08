@@ -15,11 +15,11 @@ export class ResourcesService {
         return;
     }
 
-    addResources(resources: Resource[]) : void {
+    public addResources(resources: Resource[]) : void {
         this.resources.push(...resources);
     }
 
-    getResources() : Resource[] {
+    public getResources() : Resource[] {
         return this.resources;
     }
     
