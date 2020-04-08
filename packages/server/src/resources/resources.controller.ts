@@ -21,10 +21,11 @@ export class ResourcesController {
             list: this.resourcesService.getResources()
         };
     }
+  }
 
-    @Post()
-    @HttpCode(204)
-    public create(@Body() createRequestRequest: CreateRequestRequest) {
-        return { id: 3 };
-    }
+  @Post()
+  @HttpCode(204)
+  public create(@Body() createRequestRequest: CreateRequestRequest) {
+    return { id: 3 }
+  }
 }

@@ -1,1 +1,0 @@
-require("@sample/server/cjs/server-main")

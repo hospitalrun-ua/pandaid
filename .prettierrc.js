@@ -1,7 +1,8 @@
 module.exports = {
     printWidth: 120,
     singleQuote: true,
-    tabWidth: 4,
+    tabWidth: 2,
+    semi: false,
     overrides: [
         {
             files: '*.json',
