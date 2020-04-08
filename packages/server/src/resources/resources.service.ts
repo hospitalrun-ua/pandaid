@@ -11,10 +11,6 @@ export class ResourcesService {
         this.addResources(mockData);
     }
 
-    public async createResources(): Promise<void> {
-        return;
-    }
-
     public addResources(resources: Resource[]) : void {
         this.resources.push(...resources);
     }
