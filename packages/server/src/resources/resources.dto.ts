@@ -3,14 +3,14 @@ export class ResourcesResponse {
 }
 
 export class Resource {
-    id: number;
-    name: string;
-    quantity: number;
-    quantityCovered: number;
-    price?: number | null;
-    state: ResourceStates | string;
-    beneficiary?: Beneficiary | null;
-    contactPerson: Contact;
+  id: number
+  name: string
+  quantity: number
+  quantityCovered: number
+  price?: number | null
+  state: ResourceStates | string
+  beneficiary?: Beneficiary | null
+  contactPerson: Contact
 }
 
 export enum ResourceStates {
