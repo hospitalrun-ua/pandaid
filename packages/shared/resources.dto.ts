@@ -8,7 +8,7 @@ export class Resource {
   quantity: number
   quantityCovered: number
   price?: number | null
-  state: ResourceStates
+  state: ResourceStates | string
   beneficiary?: Beneficiary | null
   contactPerson: Contact
 }

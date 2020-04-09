@@ -14,7 +14,8 @@
     "paths": {
       "@shared/*": ["../shared/*"],
       "class-validator": ["./node_modules/class-validator"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": ["src", "test", "../shared"]
 }
