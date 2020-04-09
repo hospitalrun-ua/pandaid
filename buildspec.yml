@@ -15,6 +15,7 @@ phases:
       # Build everything
       - echo Build started on `date`
       - ./node_modules/.bin/lerna run build --concurrency 4
+      - ./node_modules/.bin/lerna run lint
   post_build:
     commands:
       - echo Build completed on `date`
