@@ -1,5 +1,6 @@
 # PandAid
 [![Build Status](https://github.com/wixplosives/sample-monorepo/workflows/tests/badge.svg)](https://github.com/wixplosives/sample-monorepo/actions)
+[![Build Status](https://github.com/wixplosives/sample-monorepo/workflows/tests/badge.svg)](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiV3lPamRobitGb2JvYzJhd29jb0pkT3oxemFHVkdyQTBjZWthbk1MY3dPZXNENkJISGV1VEJienA1alNaVDkvcW5HYlhqZUYyd0xPSTM1TTNLMFdUbzFnPSIsIml2UGFyYW1ldGVyU3BlYyI6InVzOSs1UHFEeDFHRVBxQ08iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 Онлайн платформа - інструмент, який дає змогу координувати дії між благодійними, волонтерських організаціями та організаціями які потребують допомоги. [Детальний Опис проекту](https://github.com/hospitalrun-ua/pandaid/wiki)
 
