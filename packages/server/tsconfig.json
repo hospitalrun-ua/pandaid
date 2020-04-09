@@ -11,6 +11,7 @@
     "baseUrl": "./",
     "incremental": true,
     "types": ["jest"],
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "dist"]
 }
