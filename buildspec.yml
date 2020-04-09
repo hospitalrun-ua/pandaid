@@ -5,7 +5,8 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - yarn config set cache-folder /root/.yarn
-      - yarn install --frozen-lockfile  --prefer-offline
+      # Temporarily use npm to fix build
+      - npm ci
   pre_build:
     commands:
       # Clean entire monorepo and install dependent packages
