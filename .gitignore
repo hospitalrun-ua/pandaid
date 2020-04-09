@@ -111,3 +111,4 @@ public
 
 # DynamoDB Local files
 .dynamodb/
+database.sqlite

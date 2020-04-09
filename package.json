@@ -4,6 +4,8 @@
     "packages/*"
   ],
   "scripts": {
+    "db:build": "node ./db/db.js",
+    "db:cp": "cp ./db/database.template.sqlite ./database.sqlite",
     "clean": "lerna run clean --stream --parallel",
     "build": "lerna run build --stream --parallel",
     "link": "lerna link --force-local",
@@ -64,5 +66,8 @@
     ]
   },
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "sqlite3": "^4.1.1"
+  }
 }
