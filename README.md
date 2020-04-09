@@ -27,6 +27,7 @@ Backend Database | **???** | `Postponed` | Most likely PostgreSQL, less likely M
 
 ## Links
 | [Backend tasks](https://trello.com/b/1HI9XBdG/backend) |
+| --- |
 | [Frontend tasks](https://trello.com/invite/b/0iSs0lWe/a8edc6f382b09d0e96481d6130cf8d30/general) |
 | [Design guide](https://www.figma.com/file/a8zZGZXslthCfmXEPH2kak/%F0%9F%92%8AHospitalrun---Map?node-id=351%3A0) |
 | --- |
