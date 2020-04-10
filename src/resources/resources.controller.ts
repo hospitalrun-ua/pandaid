@@ -14,8 +14,8 @@ export class ResourcesController {
 
   @Get()
   @ApiResponse({ status: 200, type: ResourcesResponse })
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
+  //@UseGuards(JwtAuthGuard, RolesGuard)
+  //@Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
   public searchResources(@Query('query') query): ResourcesResponse {
     return {
       list: this.resourcesService.getResources()
