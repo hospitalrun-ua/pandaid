@@ -12,6 +12,7 @@ async function bootstrap() {
     logger: new PinoLoggerService(logger)
   })
   app.setGlobalPrefix('api')
+  app.enableCors() // TODO remove for production
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }))
 
   const options = new DocumentBuilder()
