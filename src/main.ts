@@ -7,6 +7,8 @@ import { PinoLoggerService } from './observability/LoggerService'
 
 const logger = createLogger('nestApp')
 
+const port = process.env.PORT || 3001
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: new PinoLoggerService(logger)
@@ -25,8 +27,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, options)
   SwaggerModule.setup('swagger', app, document)
 
-  logger.info('Listening...')
-  await app.listen(3001)
+  logger.info(`Listening on port ${port}`)
+  await app.listen(port)
 }
 
 bootstrap().catch(e => {
