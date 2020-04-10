@@ -9,7 +9,7 @@ const logger = createLogger('nestApp')
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    logger: new PinoLoggerService(logger),
+    logger: new PinoLoggerService(logger)
   })
   app.setGlobalPrefix('api')
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }))
@@ -28,9 +28,9 @@ async function bootstrap() {
   await app.listen(3001)
 }
 
-bootstrap().catch((e) => {
+bootstrap().catch(e => {
   logger.error('Failed to bootstrap Nest.js application', {
     err: e.message,
-    stack: e.stack,
+    stack: e.stack
   })
 })

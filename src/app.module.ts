@@ -5,6 +5,6 @@ import { EmailModule } from './email/email.module'
 import { ResourcesModule } from './resources/resources.module'
 
 @Module({
-  imports: [AuthModule, UsersModule, EmailModule, ResourcesModule],
+  imports: [AuthModule, UsersModule, EmailModule, ResourcesModule]
 })
 export class AppModule {}

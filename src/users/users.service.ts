@@ -12,26 +12,26 @@ export class UsersService {
         name: 'Admin',
         email: 'admin@example.com',
         password: 'admin',
-        role: Role.ADMIN,
+        role: Role.ADMIN
       },
       {
         id: 2,
         name: 'Volunteer',
         email: 'volunteer@example.com',
         password: 'volunteer',
-        role: Role.VOLUNTEER,
+        role: Role.VOLUNTEER
       },
       {
         id: 3,
         name: 'Supervisor',
         email: 'supervisor@example.com',
         password: 'supervisor',
-        role: Role.SUPERVISOR,
-      },
+        role: Role.SUPERVISOR
+      }
     ]
   }
 
   findOne(email: string) {
-    return this.users.find((user) => user.email === email)
+    return this.users.find(user => user.email === email)
   }
 }
