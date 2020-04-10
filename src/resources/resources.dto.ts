@@ -2,15 +2,18 @@ export class ResourcesResponse {
   list: Resource[]
 }
 
-export class Resource {
-  id: number
+export class ResourceBase {
   name: string
   quantity: number
-  quantityCovered: number
   price?: number | null
   state: ResourceStates | string
   beneficiary?: Beneficiary | null
-  contactPerson: Contact
+  contactPerson?: Contact
+  deadline?: number
+}
+export class Resource extends ResourceBase {
+  id: number
+  quantityCovered: number
 }
 
 export enum ResourceStates {
@@ -27,17 +30,4 @@ export class Contact {
   email?: string // TODO add email type
   phone?: string // TODO add phone type
   website?: string // TODO add website type
-}
-
-export class CreateRequestRequest {
-  beneficiary: Beneficiary | null
-  contactPerson?: Contact
-  items: Item[]
-  deadline: number
-}
-
-class Item {
-  name: string
-  quantity: number
-  price?: number
 }

@@ -15,6 +15,10 @@ export class ResourcesService {
     this.resources.push(...resources)
   }
 
+  public addResource(resource: Resource): void {
+    this.resources.push(resource)
+  }
+
   public getResources(): Resource[] {
     return this.resources
   }

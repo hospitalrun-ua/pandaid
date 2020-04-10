@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpCode, Post, Query, UseGuards } from '@nestjs/common'
 import { ApiResponse, ApiBearerAuth } from '@nestjs/swagger'
-import { ResourcesResponse, CreateRequestRequest } from './resources.dto'
+import { ResourcesResponse, ResourceBase } from './resources.dto'
 import { Roles } from '../auth/roles.decorator'
 import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 import { RolesGuard } from '../auth/roles.guard'
@@ -24,7 +24,12 @@ export class ResourcesController {
 
   @Post()
   @HttpCode(204)
-  public create(@Body() createRequestRequest: CreateRequestRequest) {
-    return { id: 3 }
+  public create(@Body() createRequestRequest: ResourceBase) {
+    const id = this.resourcesService.getResources().length
+    this.resourcesService.addResource({
+      id: id,
+      quantityCovered: 0,
+      ...createRequestRequest
+    })
   }
 }
