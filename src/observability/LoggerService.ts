@@ -14,7 +14,7 @@ export class PinoLoggerService implements LoggerService {
 
   error(message: string, trace: string) {
     this.logger.error(message, {
-      trace,
+      trace
     })
   }
 

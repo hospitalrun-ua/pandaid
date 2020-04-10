@@ -5,7 +5,7 @@ const baseLogger = pino({
   level: 'info',
   prettyPrint: process.env.ENVIRONMENT === 'dev',
   // Generate ISO timestamp
-  timestamp: pino.stdTimeFunctions.isoTime,
+  timestamp: pino.stdTimeFunctions.isoTime
 })
 
 export default function createLogger(loggerName: string): pino.Logger {

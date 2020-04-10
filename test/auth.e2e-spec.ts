@@ -8,7 +8,7 @@ describe('AppController (e2e)', () => {
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [AuthModule],
+      imports: [AuthModule]
     }).compile()
 
     app = moduleFixture.createNestApplication()
@@ -16,7 +16,10 @@ describe('AppController (e2e)', () => {
   })
 
   it('/auth/login (POST) - 401', () => {
-    return request(app.getHttpServer()).post('/auth/login').send({ email: 'invalid', password: 'secret' }).expect(401)
+    return request(app.getHttpServer())
+      .post('/auth/login')
+      .send({ email: 'invalid', password: 'secret' })
+      .expect(401)
   })
 
   it('/auth/login (POST) - 201', () => {

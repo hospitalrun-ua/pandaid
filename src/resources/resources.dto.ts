@@ -14,7 +14,7 @@ export class Resource {
 }
 
 export enum ResourceStates {
-  CREATED = 'Created',
+  CREATED = 'Created'
 }
 
 export class Beneficiary {

@@ -4,6 +4,6 @@ import { ResourcesController } from './resources.controller'
 
 @Module({
   providers: [ResourcesService],
-  controllers: [ResourcesController],
+  controllers: [ResourcesController]
 })
 export class ResourcesModule {}

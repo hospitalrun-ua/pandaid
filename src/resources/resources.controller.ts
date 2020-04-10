@@ -18,7 +18,7 @@ export class ResourcesController {
   @Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
   public searchResources(@Query('query') query): ResourcesResponse {
     return {
-      list: this.resourcesService.getResources(),
+      list: this.resourcesService.getResources()
     }
   }
 
