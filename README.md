@@ -6,8 +6,7 @@
 Якщо ви розробник і хочете доєднатись до проекту - заповніть невелику форму https://forms.gle/GddYNNfEierWEJny6
 
 ## Repository structure
-Repository is bundled as Monorepo using Lerna
-- Frontend [to be set up]
+- Frontend [https://github.com/hospitalrun-ua/frontend](https://github.com/hospitalrun-ua/frontend)
 - Backend [packages/server](https://github.com/hospitalrun-ua/pandaid/tree/master/packages/server)
 
 [Lerna deployment information](https://github.com/hospitalrun-ua/pandaid/blob/master/DEPLOYMENT.md)
