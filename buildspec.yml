@@ -4,24 +4,21 @@ phases:
   install:
     commands:
       - echo Installing source NPM dependencies...
-      - yarn config set cache-folder /root/.yarn
-      - yarn install --frozen-lockfile  --prefer-offline
-  pre_build:
-    commands:
-      # Clean entire monorepo and install dependent packages
-      - ./node_modules/.bin/lerna bootstrap --ci --ignore-scripts --concurrency 4
+#      - yarn config set cache-folder /root/.yarn
+#      - yarn install --frozen-lockfile  --prefer-offline
+      # Temporarily using npm to fix the build. Should be updated to yarn later.
+      - npm ci
   build:
     commands:
       # Build everything
       - echo Build started on `date`
-      - ./node_modules/.bin/lerna run build --concurrency 4
+      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
-      # - rm -rf ./node_modules/@sample/
-      # - mkdir -p ./node_modules/@sample/
-      # - cp -r ./packages/* ./node_modules/@sample/
-      # - ls ./node_modules/
+      - npm run lint
+      - npm run test
+      - npm run test:e2e
 artifacts:
   files:
     - '**/*'
