@@ -26,7 +26,7 @@ async function bootstrap() {
   SwaggerModule.setup('swagger', app, document)
 
   const port = process.env.PORT || 3001
-  logger.info('Listening...')
+  logger.info(`Listening on port ${port}`)
   await app.listen(port)
 }
 
