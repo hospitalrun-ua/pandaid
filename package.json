@@ -13,6 +13,7 @@
     "start:dev": "ENVIRONMENT=dev nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "start:eb": "npm run install && npm run start:prod",
     "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,js}\"",
     "lint-fix": "npm run lint --fix",
     "test": "jest",
