@@ -22,4 +22,8 @@ export class ResourcesService {
   public getResources(): Resource[] {
     return this.resources
   }
+
+  public getResource(id: number): Resource {
+    return this.resources.find(r => r.id === id)
+  }
 }

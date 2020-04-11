@@ -1,6 +1,6 @@
-import { Body, Controller, Get, HttpCode, Post, Query, UseGuards } from '@nestjs/common'
+import { Body, Controller, Get, HttpCode, Param, Post, Put, Query, UseGuards } from '@nestjs/common'
 import { ApiResponse, ApiBearerAuth } from '@nestjs/swagger'
-import { ResourcesResponse, ResourceBase } from './resources.dto'
+import { ResourcesResponse, ResourceBase, Resource } from './resources.dto'
 import { Roles } from '../auth/roles.decorator'
 import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 import { RolesGuard } from '../auth/roles.guard'
@@ -22,6 +22,14 @@ export class ResourcesController {
     }
   }
 
+  @Get(':id')
+  @ApiResponse({ status: 200, type: Resource })
+  //@UseGuards(JwtAuthGuard, RolesGuard)
+  //@Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
+  public getResource(@Param('id') id: string): Resource {
+    return this.resourcesService.getResource(parseInt(id))
+  }
+
   @Post()
   @HttpCode(204)
   public create(@Body() createRequestRequest: ResourceBase) {
@@ -29,7 +37,13 @@ export class ResourcesController {
     this.resourcesService.addResource({
       id: id,
       quantityCovered: 0,
-      ...createRequestRequest
+      name: createRequestRequest.name,
+      quantity: createRequestRequest.quantity,
+      price: createRequestRequest.price,
+      state: createRequestRequest.state,
+      beneficiary: createRequestRequest.beneficiary,
+      contactPerson: createRequestRequest.contactPerson,
+      deadline: createRequestRequest.deadline
     })
   }
 }
