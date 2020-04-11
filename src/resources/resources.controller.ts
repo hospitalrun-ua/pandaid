@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpCode, Param, Post, Put, Query, UseGuards } from '@nestjs/common'
 import { ApiResponse, ApiBearerAuth } from '@nestjs/swagger'
-import { ResourcesResponse, ResourceBase, Resource } from './resources.dto'
+import { ResourcesResponse, ResourceBase, Resource, ResourceStates, ResourceStateRequest } from './resources.dto'
 import { Roles } from '../auth/roles.decorator'
 import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 import { RolesGuard } from '../auth/roles.guard'
@@ -45,5 +45,15 @@ export class ResourcesController {
       contactPerson: createRequestRequest.contactPerson,
       deadline: createRequestRequest.deadline
     })
+  }
+
+  @Put(':id')
+  public updateResource(@Param('id') id: string, @Body() resource: ResourceBase): void {
+    this.resourcesService.updateResourceById(parseInt(id), resource)
+  }
+
+  @Put('/:id/state')
+  public updateResourceState(@Param('id') id: string, @Body() stateRequest: ResourceStateRequest): void {
+    this.resourcesService.updateResourceState(parseInt(id), stateRequest.state)
   }
 }

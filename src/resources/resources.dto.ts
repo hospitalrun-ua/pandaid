@@ -17,7 +17,14 @@ export class Resource extends ResourceBase {
 }
 
 export enum ResourceStates {
-  CREATED = 'Created'
+  OPEN = 'Open',
+  PENDING = 'Pending',
+  CLOSED = 'Closed',
+  ARCHIVED = 'Archived'
+}
+
+export class ResourceStateRequest {
+  state: ResourceStates
 }
 
 export class Beneficiary {
