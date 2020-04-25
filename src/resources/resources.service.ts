@@ -27,7 +27,7 @@ export class ResourcesService {
     return this.resources.find(r => r.id === id)
   }
 
-  public updateResourceById(id: number, resource: ResourceBase): void {
+  public updateResourceById(id: number, resource: Resource): void {
     let original: Resource = this.resources.find(r => r.id === id)
 
     if (original) {
@@ -46,7 +46,7 @@ export class ResourcesService {
       })
     }
   }
-  
+
   public changeState(id: number, state: ResourceStates): Resource {
     const resource = this.resources.find(r => r.id === id)
     resource.state = state

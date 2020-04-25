@@ -46,7 +46,7 @@ export class ResourcesController {
   }
 
   @Put(':id')
-  public updateResource(@Param('id') id: string, @Body() resource: ResourceBase): void {
+  public updateResource(@Param('id') id: string, @Body() resource: Resource): void {
     this.resourcesService.updateResourceById(parseInt(id), resource)
   }
 
