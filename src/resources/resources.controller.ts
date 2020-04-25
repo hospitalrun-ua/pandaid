@@ -45,6 +45,11 @@ export class ResourcesController {
     })
   }
 
+  @Put(':id')
+  public updateResource(@Param('id') id: string, @Body() resource: ResourceBase): void {
+    this.resourcesService.updateResourceById(parseInt(id), resource)
+  }
+
   @Put(':id/state')
   @ApiResponse({ status: 200, type: ChangeStateRequest })
   public setState(@Param('id') id: string, @Body() changeStatusRequest: ChangeStateRequest): Resource {
