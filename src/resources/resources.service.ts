@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common'
-import { Resource, ResourceBase, ResourceStates } from './resources.dto'
+import { Resource, ResourceStates } from './resources.dto'
 import * as mockData from './resources.mock.json'
 
 @Injectable()
@@ -46,12 +46,10 @@ export class ResourcesService {
       })
     }
   }
-
-  public updateResourceState(id: number, state: string): void {
-    const original: Resource = this.resources.find(r => r.id === id)
-
-    if (original) {
-      original.state = ResourceStates[state]
-    }
+  
+  public changeState(id: number, state: ResourceStates): Resource {
+    const resource = this.resources.find(r => r.id === id)
+    resource.state = state
+    return resource
   }
 }

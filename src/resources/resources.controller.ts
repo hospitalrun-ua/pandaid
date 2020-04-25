@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpCode, Param, Post, Put, Query, UseGuards } from '@nestjs/common'
 import { ApiResponse, ApiBearerAuth } from '@nestjs/swagger'
-import { ResourcesResponse, ResourceBase, Resource, ResourceStates, ResourceStateRequest } from './resources.dto'
+import { ResourcesResponse, ResourceBase, Resource, ResourceStates, ChangeStateRequest } from './resources.dto'
 import { Roles } from '../auth/roles.decorator'
 import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 import { RolesGuard } from '../auth/roles.guard'
@@ -24,8 +24,6 @@ export class ResourcesController {
 
   @Get(':id')
   @ApiResponse({ status: 200, type: Resource })
-  //@UseGuards(JwtAuthGuard, RolesGuard)
-  //@Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
   public getResource(@Param('id') id: string): Resource {
     return this.resourcesService.getResource(parseInt(id))
   }
@@ -37,10 +35,10 @@ export class ResourcesController {
     this.resourcesService.addResource({
       id: id,
       quantityCovered: 0,
+      state: ResourceStates.OPEN,
       name: createRequestRequest.name,
       quantity: createRequestRequest.quantity,
       price: createRequestRequest.price,
-      state: createRequestRequest.state,
       beneficiary: createRequestRequest.beneficiary,
       contactPerson: createRequestRequest.contactPerson,
       deadline: createRequestRequest.deadline
@@ -52,8 +50,9 @@ export class ResourcesController {
     this.resourcesService.updateResourceById(parseInt(id), resource)
   }
 
-  @Put('/:id/state')
-  public updateResourceState(@Param('id') id: string, @Body() stateRequest: ResourceStateRequest): void {
-    this.resourcesService.updateResourceState(parseInt(id), stateRequest.state)
+  @Put(':id/state')
+  @ApiResponse({ status: 200, type: ChangeStateRequest })
+  public setState(@Param('id') id: string, @Body() changeStatusRequest: ChangeStateRequest): Resource {
+    return this.resourcesService.changeState(parseInt(id), changeStatusRequest.state)
   }
 }
