@@ -25,7 +25,7 @@ describe('AppController (e2e)', () => {
   it('/auth/login (POST) - 201', () => {
     return request(app.getHttpServer())
       .post('/auth/login')
-      .send({ email: 'admin@example.com', password: 'admin' })
+      .send({ email: 'admin@example.com', password: '1' })
       .expect(201)
   })
 })

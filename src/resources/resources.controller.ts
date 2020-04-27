@@ -14,8 +14,6 @@ export class ResourcesController {
 
   @Get()
   @ApiResponse({ status: 200, type: ResourcesResponse })
-  //@UseGuards(JwtAuthGuard, RolesGuard)
-  //@Roles(Role.ADMIN, Role.SUPERVISOR, Role.VOLUNTEER)
   public searchResources(@Query('query') query): ResourcesResponse {
     return {
       list: this.resourcesService.getResources()
@@ -30,6 +28,8 @@ export class ResourcesController {
 
   @Post()
   @HttpCode(204)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN, Role.SUPERVISOR)
   public create(@Body() createRequestRequest: ResourceBase) {
     const id = this.resourcesService.getResources().length
     this.resourcesService.addResource({
@@ -46,11 +46,15 @@ export class ResourcesController {
   }
 
   @Put(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN, Role.SUPERVISOR)
   public updateResource(@Param('id') id: string, @Body() resource: Resource): void {
     this.resourcesService.updateResourceById(parseInt(id), resource)
   }
 
   @Put(':id/state')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN, Role.SUPERVISOR)
   @ApiResponse({ status: 200, type: ChangeStateRequest })
   public setState(@Param('id') id: string, @Body() changeStatusRequest: ChangeStateRequest): Resource {
     return this.resourcesService.changeState(parseInt(id), changeStatusRequest.state)

@@ -11,21 +11,21 @@ export class UsersService {
         id: 1,
         name: 'Admin',
         email: 'admin@example.com',
-        password: 'admin',
+        password: '1',
         role: Role.ADMIN
       },
       {
         id: 2,
         name: 'Volunteer',
         email: 'volunteer@example.com',
-        password: 'volunteer',
+        password: '1',
         role: Role.VOLUNTEER
       },
       {
         id: 3,
         name: 'Supervisor',
         email: 'supervisor@example.com',
-        password: 'supervisor',
+        password: '1',
         role: Role.SUPERVISOR
       }
     ]

@@ -4,6 +4,7 @@ import * as mockData from './resources.mock.json'
 
 @Injectable()
 export class ResourcesService {
+  // TODO working just for 1 org
   private readonly resources: Resource[]
 
   constructor() {
