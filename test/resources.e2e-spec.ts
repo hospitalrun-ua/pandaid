@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { INestApplication } from '@nestjs/common'
 import * as request from 'supertest'
-import { AppModule } from './../src/app.module'
-import { JwtAuthGuard } from './../src/auth/jwt-auth.guard'
-import { RolesGuard } from './../src/auth/roles.guard'
+import { AppModule } from '../src/app.module'
+import { JwtAuthGuard } from '../src/auth/jwt-auth.guard'
+import { RolesGuard } from '../src/auth/roles.guard'
 import * as mockData from '../src/resources/resources.mock.json'
-import { ResourcesResponse, ResourceBase, ResourceStates, ResourceStateRequest } from '../src/resources/resources.dto'
+import { ResourcesResponse, ResourceBase, ResourceStates } from '../src/resources/resources.dto'
 
 describe('ResourcesController (e2e)', () => {
   let app: INestApplication
@@ -14,7 +14,6 @@ describe('ResourcesController (e2e)', () => {
     name: 'Mock',
     quantity: 5,
     price: 5500,
-    state: 'Open',
     beneficiary: {
       name: 'КНП «ЦРЛ Києво-Святошинської районної ради»',
       address: 'Боярка, вул. Соборності, 51 - адреса лікарні'
