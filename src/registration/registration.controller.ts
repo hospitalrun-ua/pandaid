@@ -2,15 +2,13 @@ import { Body, Controller, Post, UseGuards } from '@nestjs/common'
 import { ApiTags, ApiBody, ApiResponse } from '@nestjs/swagger'
 import { VolRegisterDto, VolRegisterResponse } from './dto/volregister.dto'
 import { RegistrationService } from './registration.service'
-import { LocalAuthGuard } from 'src/auth/local-auth.guard'
+import { OrgRegisterDto, OrgRegisterResponse } from './dto/orgregister.dto'
 
-@ApiTags('register')
-@Controller('register')
+@ApiTags('registration')
+@Controller('registration')
 export class RegistrationController {
   constructor(private readonly registrationService: RegistrationService) {}
 
-  // TODO Register Volunteer - application
-  @UseGuards(LocalAuthGuard)
   @Post('volregister')
   @ApiBody({ type: VolRegisterDto })
   @ApiResponse({ status: 200, type: VolRegisterResponse })
@@ -18,6 +16,12 @@ export class RegistrationController {
     return this.registrationService.registerVolunteer(volRegisterRequest)
   }
 
-  // TODO Register Org - application
+  @Post('orgregister')
+  @ApiBody({ type: OrgRegisterDto })
+  @ApiResponse({ status: 200, type: OrgRegisterResponse })
+  orgregister(@Body() registerRequest: OrgRegisterDto): OrgRegisterResponse {
+    return this.registrationService.registerOrganization(registerRequest)
+  }
+
   // TODO Get user profile
 }

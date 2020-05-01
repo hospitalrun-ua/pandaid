@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsEmail, IsLowercase } from 'class-validator'
+import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber } from 'class-validator'
 
 export class VolRegisterDto {
   @IsLowercase()
@@ -11,6 +11,8 @@ export class VolRegisterDto {
   @IsNotEmpty()
   readonly secondName: string
 
+  // TODO add validation params
+  // @IsPhoneNumber()
   @IsNotEmpty()
   readonly phoneNumber: string
 
@@ -22,10 +24,6 @@ export class VolRegisterDto {
 
   @IsNotEmpty()
   readonly organizationName: string
-
-  @IsNotEmpty()
-  readonly password: string
 }
 
-export class VolRegisterResponse {
-}
+export class VolRegisterResponse {}
