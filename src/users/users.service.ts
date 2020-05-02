@@ -38,7 +38,7 @@ export class UsersService {
     return this.users.find(user => user.email === email)
   }
 
-  addOne(user: User){
+  addOne(user: User) {
     this.users.push(user)
   }
 }
