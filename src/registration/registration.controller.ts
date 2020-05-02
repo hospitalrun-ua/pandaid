@@ -1,25 +1,25 @@
 import { Body, Controller, Post, UseGuards } from '@nestjs/common'
 import { ApiTags, ApiBody, ApiResponse } from '@nestjs/swagger'
-import { VolRegisterDto, VolRegisterResponse } from './dto/volregister.dto'
+import { VolunteerDto, VolunteerResponse } from './dto/volounteer.dto'
 import { RegistrationService } from './registration.service'
-import { OrgRegisterDto, OrgRegisterResponse } from './dto/orgregister.dto'
+import { OrganizationDto, OrganizationResponse } from './dto/organization.dto'
 
 @ApiTags('registration')
 @Controller('registration')
 export class RegistrationController {
   constructor(private readonly registrationService: RegistrationService) {}
 
-  @Post('volregister')
-  @ApiBody({ type: VolRegisterDto })
-  @ApiResponse({ status: 200, type: VolRegisterResponse })
-  volregister(@Body() volRegisterRequest: VolRegisterDto): VolRegisterResponse {
+  @Post('volunteer')
+  @ApiBody({ type: VolunteerDto })
+  @ApiResponse({ status: 200, type: VolunteerResponse })
+  volunteer(@Body() volRegisterRequest: VolunteerDto): VolunteerResponse {
     return this.registrationService.registerVolunteer(volRegisterRequest)
   }
 
-  @Post('orgregister')
-  @ApiBody({ type: OrgRegisterDto })
-  @ApiResponse({ status: 200, type: OrgRegisterResponse })
-  orgregister(@Body() registerRequest: OrgRegisterDto): OrgRegisterResponse {
+  @Post('organization')
+  @ApiBody({ type: OrganizationDto })
+  @ApiResponse({ status: 200, type: OrganizationResponse })
+  organization(@Body() registerRequest: OrganizationDto): OrganizationResponse {
     return this.registrationService.registerOrganization(registerRequest)
   }
 

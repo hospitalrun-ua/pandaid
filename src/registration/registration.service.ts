@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common'
 import { UsersService } from '../users/users.service'
 import { Role, Status } from '../users/users.interface'
-import { VolRegisterDto } from './dto/volregister.dto'
+import { VolunteerDto } from './dto/volounteer.dto'
 import { v4 as uuidv4 } from 'uuid'
 import { Status as OrgStatus } from 'src/organizations/organizations.interface'
 import { OrganizationsService } from 'src/organizations/organizations.service'
-import { OrgRegisterDto } from './dto/orgregister.dto'
+import { OrganizationDto } from './dto/organization.dto'
 
 @Injectable()
 export class RegistrationService {
@@ -14,7 +14,7 @@ export class RegistrationService {
     private readonly organizationsService: OrganizationsService
   ) {}
 
-  registerVolunteer(volRegisterRequest: VolRegisterDto) {
+  registerVolunteer(volRegisterRequest: VolunteerDto) {
     this.usersService.addOne({
       role: Role.VOLUNTEER,
       status: Status.NEW,
@@ -26,7 +26,7 @@ export class RegistrationService {
     return null
   }
 
-  registerOrganization(registerRequest: OrgRegisterDto) {
+  registerOrganization(registerRequest: OrganizationDto) {
     this.organizationsService.addOne({
       id: uuidv4(),
       status: OrgStatus.NEW,

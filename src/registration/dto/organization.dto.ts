@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber } from 'class-validator'
 
-export class OrgRegisterDto {
+export class OrganizationDto {
   @IsLowercase()
   readonly name: string
 
@@ -27,4 +27,4 @@ export class OrgRegisterDto {
   readonly contactPersonPhoneNumber: string
 }
 
-export class OrgRegisterResponse {}
+export class OrganizationResponse {}

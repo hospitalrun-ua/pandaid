@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber } from 'class-validator'
 
-export class VolRegisterDto {
+export class VolunteerDto {
   @IsLowercase()
   @IsEmail()
   readonly email: string
@@ -26,4 +26,4 @@ export class VolRegisterDto {
   readonly organizationName: string
 }
 
-export class VolRegisterResponse {}
+export class VolunteerResponse {}
