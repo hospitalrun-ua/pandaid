@@ -3,8 +3,8 @@ import { UsersService } from '../users/users.service'
 import { Role, Status } from '../users/users.interface'
 import { VolunteerDto } from './dto/volounteer.dto'
 import { v4 as uuidv4 } from 'uuid'
-import { Status as OrgStatus } from 'src/organizations/organizations.interface'
-import { OrganizationsService } from 'src/organizations/organizations.service'
+import { Status as OrgStatus } from '../organizations/organizations.interface'
+import { OrganizationsService } from '../organizations/organizations.service'
 import { OrganizationDto } from './dto/organization.dto'
 
 @Injectable()
