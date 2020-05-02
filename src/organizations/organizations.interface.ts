@@ -1,5 +1,5 @@
 export enum Status {
-  NEW = 'NEW',
+  REGISTRATION_STARTED = 'REGISTRATION_STARTED',
   ACTIVE = 'ACTIVE'
 }
 

@@ -17,7 +17,7 @@ export class RegistrationService {
   registerVolunteer(volRegisterRequest: VolunteerDto) {
     this.usersService.addOne({
       role: Role.VOLUNTEER,
-      status: Status.NEW,
+      status: Status.REGISTRATION_STARTED,
       name: volRegisterRequest.firstName,
       email: volRegisterRequest.email,
       password: '',
@@ -29,7 +29,7 @@ export class RegistrationService {
   registerOrganization(registerRequest: OrganizationDto) {
     this.organizationsService.addOne({
       id: uuidv4(),
-      status: OrgStatus.NEW,
+      status: OrgStatus.REGISTRATION_STARTED,
       name: registerRequest.name,
       region: registerRequest.region,
       URL: registerRequest.url,

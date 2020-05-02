@@ -9,7 +9,7 @@ export class OrganizationsService {
     this.organizations = [
       {
         id: 1,
-        status: Status.NEW,
+        status: Status.ACTIVE,
         name: 'UNICEF',
         URL: 'https://test.com',
         description: 'very good organization',
