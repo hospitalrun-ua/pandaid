@@ -1,10 +1,14 @@
-import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber } from 'class-validator'
+import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber, Matches } from 'class-validator'
 
 export class OrganizationDto {
   @IsLowercase()
   readonly name: string
 
   @IsNotEmpty()
+  // eslint-disable-next-line no-useless-escape
+  @Matches(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/, {
+    message: 'Wrong url.'
+  })
   readonly url: string
 
   @IsNotEmpty()
