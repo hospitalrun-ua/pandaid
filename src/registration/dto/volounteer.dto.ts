@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber } from 'class-validator'
+import { IsNotEmpty, IsEmail, IsLowercase, Matches } from 'class-validator';
 
 export class VolunteerDto {
   @IsLowercase()
@@ -11,9 +11,10 @@ export class VolunteerDto {
   @IsNotEmpty()
   readonly secondName: string
 
-  // TODO add validation params
-  // @IsPhoneNumber()
   @IsNotEmpty()
+  @Matches(/^\+?[0-9]{3}-?[0-9]{6,12}$/, {
+    message: 'Wrong phone number.'
+  })
   readonly phoneNumber: string
 
   @IsNotEmpty()

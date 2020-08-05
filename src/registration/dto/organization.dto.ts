@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsEmail, IsLowercase, IsPhoneNumber, Matches } from 'class-validator'
+import { IsNotEmpty, IsEmail, IsLowercase, Matches } from 'class-validator';
 
 export class OrganizationDto {
   @IsLowercase()
@@ -28,6 +28,9 @@ export class OrganizationDto {
   readonly contactPersonEmail: string
 
   @IsNotEmpty()
+  @Matches(/^\+?[0-9]{3}-?[0-9]{6,12}$/, {
+    message: 'Wrong phone number.'
+  })
   readonly contactPersonPhoneNumber: string
 }
 
