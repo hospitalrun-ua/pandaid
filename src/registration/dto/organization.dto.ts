@@ -5,6 +5,10 @@ export class OrganizationDto {
   readonly name: string
 
   @IsNotEmpty()
+  // eslint-disable-next-line no-useless-escape
+  @Matches(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/, {
+    message: 'Wrong url.'
+  })
   readonly url: string
 
   @IsNotEmpty()
