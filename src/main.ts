@@ -5,6 +5,9 @@ import { AppModule } from './app.module'
 import createLogger from './observability/logger'
 import { PinoLoggerService } from './observability/LoggerService'
 
+import * as session from 'express-session'
+import * as passport from 'passport'
+
 const logger = createLogger('nestApp')
 
 async function bootstrap() {
@@ -24,6 +27,17 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, options)
   SwaggerModule.setup('swagger', app, document)
+
+  app.use(
+    session({
+      secret: 'secret',
+      resave: false,
+      saveUninitialized: false
+    })
+  )
+
+  app.use(passport.initialize())
+  app.use(passport.session())
 
   const port = process.env.PORT || 3001
   logger.info(`Listening on port ${port}`)
