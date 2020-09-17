@@ -6,6 +6,7 @@ import { LocalStrategy } from './local.strategy'
 import { JwtStrategy } from './jwt.strategy'
 import { UsersModule } from '../users/users.module'
 import { AuthController } from './auth.controller'
+import { SessionSerializer } from './session.serializer'
 
 @Module({
   imports: [
@@ -17,6 +18,6 @@ import { AuthController } from './auth.controller'
     })
   ],
   controllers: [AuthController],
-  providers: [AuthService, LocalStrategy, JwtStrategy]
+  providers: [AuthService, LocalStrategy, JwtStrategy, SessionSerializer]
 })
 export class AuthModule {}
